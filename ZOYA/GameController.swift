@@ -37,11 +37,29 @@ class GameController: UIViewController {
         super.viewDidLoad()
         card.text = currentcard[1]
         let kind = (Int(currentcard[0]) ?? 4) - 1
-        print(kind)
+        //print(kind)
         self.view.backgroundColor = colors[kind][0]
         category.textColor = colors[kind][1]
         category.text = labels[kind]
         card.textColor = colors[kind][1]
+        
+
+        let fileURLProject = Bundle.main.path(forResource: "deck", ofType: "txt")
+        var readStringProject = ""
+        do {
+            readStringProject = try String(contentsOfFile: fileURLProject!, encoding:String.Encoding.utf8)
+        } catch let error as NSError {
+            print("Failed to read file")
+            print(error)
+        }
+        let lines = readStringProject.components(separatedBy: "\n")
+        var attribute = [[String]]()
+        for item in lines {
+            //print(item.components(separatedBy: ":"))
+            attribute.append(item.components(separatedBy: ":"))
+        }
+        attribute.remove(at: attribute.count-1)
+        deck = attribute
 
         // Do any additional setup after loading the view.
     }

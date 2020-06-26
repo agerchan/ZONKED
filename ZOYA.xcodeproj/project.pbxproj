@@ -16,6 +16,7 @@
 		9506BDED24A66EDB004A0BBD /* ZOYATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDEC24A66EDB004A0BBD /* ZOYATests.swift */; };
 		9506BDF824A66EDB004A0BBD /* ZOYAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */; };
 		9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BE0524A66F0C004A0BBD /* GameController.swift */; };
+		9506BE0824A69DEC004A0BBD /* deck.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9506BE0724A69DEB004A0BBD /* deck.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOYAUITests.swift; sourceTree = "<group>"; };
 		9506BDF924A66EDB004A0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9506BE0524A66F0C004A0BBD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		9506BE0724A69DEB004A0BBD /* deck.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deck.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				9506BDD924A66ED9004A0BBD /* ViewController.swift */,
 				9506BE0524A66F0C004A0BBD /* GameController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
+				9506BE0724A69DEB004A0BBD /* deck.txt */,
 				9506BDDE24A66EDB004A0BBD /* Assets.xcassets */,
 				9506BDE024A66EDB004A0BBD /* LaunchScreen.storyboard */,
 				9506BDE324A66EDB004A0BBD /* Info.plist */,
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9506BDE224A66EDB004A0BBD /* LaunchScreen.storyboard in Resources */,
+				9506BE0824A69DEC004A0BBD /* deck.txt in Resources */,
 				9506BDDF24A66EDB004A0BBD /* Assets.xcassets in Resources */,
 				9506BDDD24A66ED9004A0BBD /* Main.storyboard in Resources */,
 			);
@@ -439,6 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56G2DHRN2D;
 				INFOPLIST_FILE = ZOYA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -456,6 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 56G2DHRN2D;
 				INFOPLIST_FILE = ZOYA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

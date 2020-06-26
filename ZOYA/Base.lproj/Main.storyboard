@@ -110,6 +110,7 @@
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="mON-4U-nCP"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="bottom" secondItem="xuc-uj-YHH" secondAttribute="bottom" constant="100" id="pER-QS-3fS"/>
                             <constraint firstItem="Jh6-JH-yJW" firstAttribute="top" secondItem="QLf-hQ-PtS" secondAttribute="bottom" constant="125" id="qo2-dn-2dk"/>
+                            <constraint firstItem="Jh6-JH-yJW" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="z7L-zh-C2G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j1V-PU-gQu"/>
                     </view>
@@ -121,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="my6-3e-KS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="113"/>
+            <point key="canvasLocation" x="952.17391304347836" y="112.5"/>
         </scene>
     </scenes>
 </document>
