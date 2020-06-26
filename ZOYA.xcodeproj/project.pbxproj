@@ -15,6 +15,7 @@
 		9506BDE224A66EDB004A0BBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9506BDE024A66EDB004A0BBD /* LaunchScreen.storyboard */; };
 		9506BDED24A66EDB004A0BBD /* ZOYATests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDEC24A66EDB004A0BBD /* ZOYATests.swift */; };
 		9506BDF824A66EDB004A0BBD /* ZOYAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */; };
+		9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BE0524A66F0C004A0BBD /* GameController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		9506BDF324A66EDB004A0BBD /* ZOYAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZOYAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZOYAUITests.swift; sourceTree = "<group>"; };
 		9506BDF924A66EDB004A0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9506BE0524A66F0C004A0BBD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				9506BDD524A66ED9004A0BBD /* AppDelegate.swift */,
 				9506BDD724A66ED9004A0BBD /* SceneDelegate.swift */,
 				9506BDD924A66ED9004A0BBD /* ViewController.swift */,
+				9506BE0524A66F0C004A0BBD /* GameController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
 				9506BDDE24A66EDB004A0BBD /* Assets.xcassets */,
 				9506BDE024A66EDB004A0BBD /* LaunchScreen.storyboard */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9506BDDA24A66ED9004A0BBD /* ViewController.swift in Sources */,
+				9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */,
 				9506BDD624A66ED9004A0BBD /* AppDelegate.swift in Sources */,
 				9506BDD824A66ED9004A0BBD /* SceneDelegate.swift in Sources */,
 			);
