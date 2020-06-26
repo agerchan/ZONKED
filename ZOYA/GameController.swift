@@ -23,7 +23,7 @@ class GameController: UIViewController {
                 ["4", "tell the story of how you lost your virginity"],
                 ["4", "who is the least attractive"]]
     
-    let colors = [[UIColor.init(displayP3Red: 0.25, green: 0.75, blue: 0.25, alpha: 1), UIColor.init(displayP3Red: 0.5, green: 1, blue: 0.5, alpha: 1)], [UIColor.init(displayP3Red: 0.75, green: 0.25, blue: 0.75, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.5, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.25, green: 0.25, blue: 0.75, alpha: 1), UIColor.init(displayP3Red: 0.5, green: 0.5, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.75, green: 0.25, blue: 0.25, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.5, blue: 0.5, alpha: 1)], [UIColor.black, UIColor.white]]
+    let colors = [[UIColor.init(displayP3Red: 0.15, green: 0.35, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 1, blue: 0.85, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.15, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 0.85, alpha: 1)], [UIColor.black, UIColor.white]]
     
     let labels = ["BUZ'D", "WHO", "misc", "ToD", ""]
     
