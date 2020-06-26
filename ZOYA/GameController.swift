@@ -10,6 +10,8 @@ import UIKit
 
 class GameController: UIViewController {
     
+    var truthtable = [false]
+    
     //1 = buz'd (green)
     //2 = WHO (purple)
     //3 = misc (blue)
@@ -34,6 +36,9 @@ class GameController: UIViewController {
     @IBOutlet weak var card: UILabel!
     
     override func viewDidLoad() {
+        print(truthtable)
+        
+        
         super.viewDidLoad()
         card.text = currentcard[1]
         let kind = (Int(currentcard[0]) ?? 4) - 1
@@ -49,8 +54,8 @@ class GameController: UIViewController {
         do {
             readStringProject = try String(contentsOfFile: fileURLProject!, encoding:String.Encoding.utf8)
         } catch let error as NSError {
-            print("Failed to read file")
-            print(error)
+            //print("Failed to read file")
+            //print(error)
         }
         let lines = readStringProject.components(separatedBy: "\n")
         var attribute = [[String]]()
@@ -83,7 +88,7 @@ class GameController: UIViewController {
         }
         card.text = currentcard[1]
         let kind = (Int(currentcard[0]) ?? 4) - 1
-        print(kind)
+        //print(kind)
         self.view.backgroundColor = colors[kind][0]
         category.textColor = colors[kind][1]
         category.text = labels[kind]

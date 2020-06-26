@@ -22,7 +22,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func startpressed(_ sender: Any) {
-        performSegue(withIdentifier: "forward", sender: self)
+        performSegue(withIdentifier: "forward1", sender: self)
     }
     
 }
