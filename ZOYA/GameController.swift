@@ -109,7 +109,8 @@ class GameController: UIViewController {
             }
         }
         else if deck.count == 0 {
-            currentcard = ["5", "GAME OVER"]
+            performSegue(withIdentifier: "GameOver", sender: self)
+            //currentcard = ["5", "GAME OVER"]
         }
         else {
             let index = Int.random(in: 0...(deck.count-1))

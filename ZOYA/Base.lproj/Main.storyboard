@@ -212,11 +212,57 @@
                         <outlet property="card" destination="Jh6-JH-yJW" id="E75-3a-iWA"/>
                         <outlet property="category" destination="QLf-hQ-PtS" id="wB9-2G-Kg3"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="backward" animates="NO" modalPresentationStyle="fullScreen" id="Jzq-oB-uNs"/>
+                        <segue destination="JZh-Sz-iDM" kind="presentation" identifier="GameOver" animates="NO" modalPresentationStyle="fullScreen" id="fH3-gQ-c8S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="my6-3e-KS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.7971014492755" y="114.50892857142857"/>
         </scene>
+        <!--Game Over Controller-->
+        <scene sceneID="Af3-Lo-E8o">
+            <objects>
+                <viewController id="JZh-Sz-iDM" customClass="GameOverController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EXE-y2-9pL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-xW-VMv">
+                                <rect key="frame" x="43" y="219" width="328" height="65"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-he-fih">
+                                <rect key="frame" x="339" y="69" width="50" height="35"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <state key="normal" title="restart">
+                                    <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="restartclicked:" destination="JZh-Sz-iDM" eventType="touchUpInside" id="IDP-cz-Lxj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wVu-he-fih" firstAttribute="top" secondItem="a5o-Q5-Qsq" secondAttribute="top" constant="25" id="5Tl-JY-g4q"/>
+                            <constraint firstItem="6xp-xW-VMv" firstAttribute="top" secondItem="a5o-Q5-Qsq" secondAttribute="top" constant="175" id="A3L-uD-LgP"/>
+                            <constraint firstItem="6xp-xW-VMv" firstAttribute="centerX" secondItem="EXE-y2-9pL" secondAttribute="centerX" id="Kqt-II-R2j"/>
+                            <constraint firstItem="a5o-Q5-Qsq" firstAttribute="trailing" secondItem="wVu-he-fih" secondAttribute="trailing" constant="25" id="cOq-TT-Xwo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a5o-Q5-Qsq"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="restart" animates="NO" modalPresentationStyle="fullScreen" id="CAS-oM-YsA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5n-XA-BWu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2559" y="116"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="CAS-oM-YsA"/>
+    </inferredMetricsTieBreakers>
 </document>
