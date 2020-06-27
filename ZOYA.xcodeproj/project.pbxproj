@@ -18,9 +18,9 @@
 		9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BE0524A66F0C004A0BBD /* GameController.swift */; };
 		9506BE0824A69DEC004A0BBD /* deck.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9506BE0724A69DEB004A0BBD /* deck.txt */; };
 		95EB8D5524A6A9B90046BF01 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */; };
-		95EB8D6724A700A20046BF01 /* 1.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6424A700A10046BF01 /* 1.txt */; };
-		95EB8D6824A700A20046BF01 /* 2.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6524A700A20046BF01 /* 2.txt */; };
-		95EB8D6924A700A20046BF01 /* 3.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6624A700A20046BF01 /* 3.txt */; };
+		95EB8D6B24A7CC610046BF01 /* corona.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6A24A7CC610046BF01 /* corona.txt */; };
+		95EB8D6D24A7CC6B0046BF01 /* college.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6C24A7CC6B0046BF01 /* college.txt */; };
+		95EB8D6F24A7CC7A0046BF01 /* us.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6E24A7CC7A0046BF01 /* us.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		9506BE0524A66F0C004A0BBD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9506BE0724A69DEB004A0BBD /* deck.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deck.txt; sourceTree = "<group>"; };
 		95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
-		95EB8D6424A700A10046BF01 /* 1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 1.txt; sourceTree = "<group>"; };
-		95EB8D6524A700A20046BF01 /* 2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2.txt; sourceTree = "<group>"; };
-		95EB8D6624A700A20046BF01 /* 3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 3.txt; sourceTree = "<group>"; };
+		95EB8D6A24A7CC610046BF01 /* corona.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = corona.txt; sourceTree = "<group>"; };
+		95EB8D6C24A7CC6B0046BF01 /* college.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college.txt; sourceTree = "<group>"; };
+		95EB8D6E24A7CC7A0046BF01 /* us.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +118,9 @@
 				9506BE0524A66F0C004A0BBD /* GameController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
 				9506BE0724A69DEB004A0BBD /* deck.txt */,
-				95EB8D6424A700A10046BF01 /* 1.txt */,
-				95EB8D6524A700A20046BF01 /* 2.txt */,
-				95EB8D6624A700A20046BF01 /* 3.txt */,
+				95EB8D6C24A7CC6B0046BF01 /* college.txt */,
+				95EB8D6E24A7CC7A0046BF01 /* us.txt */,
+				95EB8D6A24A7CC610046BF01 /* corona.txt */,
 				9506BDDE24A66EDB004A0BBD /* Assets.xcassets */,
 				9506BDE024A66EDB004A0BBD /* LaunchScreen.storyboard */,
 				9506BDE324A66EDB004A0BBD /* Info.plist */,
@@ -250,11 +250,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95EB8D6F24A7CC7A0046BF01 /* us.txt in Resources */,
 				9506BDE224A66EDB004A0BBD /* LaunchScreen.storyboard in Resources */,
-				95EB8D6924A700A20046BF01 /* 3.txt in Resources */,
-				95EB8D6724A700A20046BF01 /* 1.txt in Resources */,
+				95EB8D6B24A7CC610046BF01 /* corona.txt in Resources */,
+				95EB8D6D24A7CC6B0046BF01 /* college.txt in Resources */,
 				9506BE0824A69DEC004A0BBD /* deck.txt in Resources */,
-				95EB8D6824A700A20046BF01 /* 2.txt in Resources */,
 				9506BDDF24A66EDB004A0BBD /* Assets.xcassets in Resources */,
 				9506BDDD24A66ED9004A0BBD /* Main.storyboard in Resources */,
 			);

@@ -11,6 +11,8 @@ import UIKit
 class GameController: UIViewController {
     
     var truthtable = [false]
+    var labletable = ["college", "us", "corona"]
+    //college, us, corona
     
     //1 = buz'd (green)
     //2 = WHO (purple)
@@ -69,7 +71,7 @@ class GameController: UIViewController {
         for i in 1...truthtable.count {
             let ex = truthtable[i-1]
             if ex {
-                makeDeck(fname: String(i))
+                makeDeck(fname: labletable[i-1])
             }
         }
         let index = Int.random(in: 0...(deck.count-1))
