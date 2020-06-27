@@ -169,8 +169,8 @@
                                     <action selector="exitpressed:" destination="UTc-vp-2Yb" eventType="touchUpInside" id="rjG-hc-ewN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-JH-yJW">
-                                <rect key="frame" x="159.5" y="409" width="95" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-JH-yJW">
+                                <rect key="frame" x="50" y="409" width="314" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -195,15 +195,16 @@
                         <color key="backgroundColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Jh6-JH-yJW" firstAttribute="leading" secondItem="j1V-PU-gQu" secondAttribute="leading" constant="50" id="1ZL-du-afe"/>
                             <constraint firstItem="Jh6-JH-yJW" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="3JG-t1-Yp7"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="trailing" secondItem="71x-Mo-T5M" secondAttribute="trailing" constant="25" id="5ST-ca-Adj"/>
                             <constraint firstItem="xuc-uj-YHH" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="7nh-2U-Nnw"/>
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="175" id="D82-yR-WCe"/>
                             <constraint firstItem="71x-Mo-T5M" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="25" id="T91-An-13T"/>
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="mON-4U-nCP"/>
+                            <constraint firstItem="j1V-PU-gQu" firstAttribute="trailing" secondItem="Jh6-JH-yJW" secondAttribute="trailing" constant="50" id="oq8-V9-PmO"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="bottom" secondItem="xuc-uj-YHH" secondAttribute="bottom" constant="100" id="pER-QS-3fS"/>
                             <constraint firstItem="Jh6-JH-yJW" firstAttribute="top" secondItem="QLf-hQ-PtS" secondAttribute="bottom" constant="125" id="qo2-dn-2dk"/>
-                            <constraint firstItem="Jh6-JH-yJW" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="z7L-zh-C2G"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="j1V-PU-gQu"/>
                     </view>
@@ -215,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="my6-3e-KS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1806" y="115"/>
+            <point key="canvasLocation" x="1805.7971014492755" y="114.50892857142857"/>
         </scene>
     </scenes>
 </document>
