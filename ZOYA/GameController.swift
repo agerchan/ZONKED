@@ -12,6 +12,9 @@ class GameController: UIViewController {
     
     var truthtable = [false]
     var labletable = ["college", "us", "corona"]
+    
+    var paranoiaMode = false
+    
     //college, us, corona
     
     //1 = buz'd (green)
@@ -20,10 +23,11 @@ class GameController: UIViewController {
     //4 = ToD (red)
     
     var deck = [[String]]()
+    var paranoiaDeck = [[String]]()
     
     let colors = [[UIColor.init(displayP3Red: 0.15, green: 0.35, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 1, blue: 0.85, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.15, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 0.85, alpha: 1)], [UIColor.black, UIColor.white]]
     
-    let labels = ["BUZ'D", "WHO", "misc", "ToD", ""]
+    let labels = ["BUZ'D", "WHO", "misc", "ToD", "paranoia"]
     
     var currentcard = ["5", "Welcome!"]
 
@@ -31,14 +35,15 @@ class GameController: UIViewController {
     
     @IBOutlet weak var card: UILabel!
     
-    func makeDeck(fname: String){
+    func makeDeck(fname: String) -> Array<Array<String>> {
+        
         let fileURLProject = Bundle.main.path(forResource: fname, ofType: "txt")
                var readStringProject = ""
                do {
                    readStringProject = try String(contentsOfFile: fileURLProject!, encoding:String.Encoding.utf8)
                } catch let error as NSError {
-                   //print("Failed to read file")
-                   //print(error)
+                   print("Failed to read file")
+                   print(error)
                }
                let lines = readStringProject.components(separatedBy: "\n")
                var attribute = [[String]]()
@@ -47,50 +52,43 @@ class GameController: UIViewController {
                    attribute.append(item.components(separatedBy: ":"))
                }
                attribute.remove(at: attribute.count-1)
-               deck += attribute
-               
+                //
+        return attribute
     }
     
-    /*
-     func paranoiaDeck(Deck: [[String]]) -> [String] {
-        var subDeck = [[String]] ()
-        for card in Deck{
-        if card[0] == labels[1]{
-            subDeck.append(contentOf: [card])
-            }
-        print(subDeck)
-        return subDeck
-     }
-     */
-    
-    override func viewDidLoad() {
-        //print(truthtable)
-        
-        super.viewDidLoad()
-        makeDeck(fname: "deck")
-        for i in 1...truthtable.count {
-            let ex = truthtable[i-1]
-            if ex {
-                makeDeck(fname: labletable[i-1])
-            }
-        }
-        let index = Int.random(in: 0...(deck.count-1))
-        currentcard = deck[index]
-        deck.remove(at: index)
-        card.text = currentcard[1]
-        let kind = (Int(currentcard[0]) ?? 4) - 1
+    func generateCard(newcard: [String]){
+        card.text = newcard[1]
+        let kind = (Int(newcard[0]) ?? 4) - 1
         //print(kind)
         self.view.backgroundColor = colors[kind][0]
         category.textColor = colors[kind][1]
         category.text = labels[kind]
         card.textColor = colors[kind][1]
+    }
+    
+    //PRE LOADED ON SCREEN
+    override func viewDidLoad() {
+        //print(truthtable)
+        super.viewDidLoad()
+        deck += makeDeck(fname: "deck")
+        paranoiaDeck += makeDeck(fname: "paranoia")
+        for i in 1...truthtable.count {
+            let ex = truthtable[i-1]
+            if ex {
+                deck += makeDeck(fname: labletable[i-1])
+            }
+        }
+        
+        //Place First Card
+        let index = Int.random(in: 0...(deck.count-1))
+        currentcard = deck[index]
+        deck.remove(at: index)
+        generateCard(newcard: currentcard)
         if currentcard.count == 3 {
-                   if currentcard[2] == "paranoia"{
-                       //run paranoia Deck function
-                        print("Use who Deck")
+            if currentcard[2] == "paranoia"{
+                paranoiaMode = true
                    }
                }
-
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -102,7 +100,15 @@ class GameController: UIViewController {
     }
     
     @IBAction func nextcardpressed(_ sender: Any) {
-        if deck.count == 0 {
+        if paranoiaMode == true {
+            let index = Int.random(in: 0...(paranoiaDeck.count-1))
+            currentcard = paranoiaDeck[index]
+            paranoiaDeck.remove(at: index)
+            if paranoiaDeck.count == 0 {
+                paranoiaMode = false
+            }
+        }
+        else if deck.count == 0 {
             currentcard = ["5", "GAME OVER"]
         }
         else {
@@ -110,30 +116,13 @@ class GameController: UIViewController {
             currentcard = deck[index]
             deck.remove(at: index)
         }
-        card.text = currentcard[1]
-        let kind = (Int(currentcard[0]) ?? 4) - 1
-        //print(kind)
-        self.view.backgroundColor = colors[kind][0]
-        category.textColor = colors[kind][1]
-        category.text = labels[kind]
-        card.textColor = colors[kind][1]
-        
+        generateCard(newcard: currentcard)
         if currentcard.count == 3 {
             if currentcard[2] == " paranoia"{
-                print("Use who Deck")
-                //run paranoia Deck function
+                paranoiaMode = true
             }
+            
         }
-        //
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+   
 }
