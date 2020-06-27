@@ -11,13 +11,14 @@ import UIKit
 class ExtensionController: UIViewController {
     
     var truthtable = [false, false, false]
+    //currently [college pack, us specific pack, corona pack]
     
-    var cmu = false
-    var us = false
-    var corona = false
+    //var cmu = false
+    //var us = false
+    //var corona = false
     
     
-    @IBOutlet weak var cmubutton: UIButton!
+    @IBOutlet weak var collegebutton: UIButton!
     @IBOutlet weak var usbutton: UIButton!
     @IBOutlet weak var coronabutton: UIButton!
     
@@ -34,14 +35,14 @@ class ExtensionController: UIViewController {
         //nothing yet
     }
     
-    @IBAction func cmuclicked(_ sender: Any) {
+    @IBAction func collegeclicked(_ sender: Any) {
         if truthtable[0] {
             truthtable[0] = false
-            cmubutton.isSelected = false
+            collegebutton.isSelected = false
         }
         else {
             truthtable[0] = true
-            cmubutton.isSelected = true
+            collegebutton.isSelected = true
         }
         //print(truthtable[0])
     }

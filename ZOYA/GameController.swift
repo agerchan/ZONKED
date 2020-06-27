@@ -36,8 +36,7 @@ class GameController: UIViewController {
     @IBOutlet weak var card: UILabel!
     
     override func viewDidLoad() {
-        print(truthtable)
-        
+        //print(truthtable)
         
         super.viewDidLoad()
         card.text = currentcard[1]
