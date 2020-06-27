@@ -65,6 +65,29 @@ class GameController: UIViewController {
         }
         attribute.remove(at: attribute.count-1)
         deck = attribute
+        
+        for i in 1...truthtable.count {
+            let ex = truthtable[i-1]
+            if ex {
+                let currfileURLProject = Bundle.main.path(forResource: String(i), ofType: "txt")
+                var currreadStringProject = ""
+                do {
+                    currreadStringProject = try String(contentsOfFile: currfileURLProject!, encoding:String.Encoding.utf8)
+                } catch let error as NSError {
+                    print("Failed to read file")
+                    print(error)
+                }
+                let lines = currreadStringProject.components(separatedBy: "\n")
+                //var attribute = [[String]]()
+                for item in lines {
+                    //print(item.components(separatedBy: ":"))
+                    deck.append(item.components(separatedBy: ":"))
+                }
+                deck.remove(at: deck.count-1)
+                //deck.append(attribute)
+                
+            }
+        }
 
         // Do any additional setup after loading the view.
     }
