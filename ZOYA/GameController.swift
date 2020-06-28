@@ -33,7 +33,10 @@ class GameController: UIViewController {
 
     @IBOutlet weak var category: UILabel!
     
+    @IBOutlet weak var nextcardbutton: UIButton!
     @IBOutlet weak var card: UILabel!
+    @IBOutlet weak var exitbutton: UIButton!
+    @IBOutlet weak var backbutton: UIButton!
     
     func makeDeck(fname: String) -> Array<Array<String>> {
         
@@ -69,6 +72,7 @@ class GameController: UIViewController {
     //PRE LOADED ON SCREEN
     override func viewDidLoad() {
         //print(truthtable)
+        backbutton.isHidden = true
         super.viewDidLoad()
         deck += makeDeck(fname: "deck")
         paranoiaDeck += makeDeck(fname: "paranoia")
@@ -86,6 +90,9 @@ class GameController: UIViewController {
         generateCard(newcard: currentcard)
         if currentcard.count == 3 {
             if currentcard[2] == "paranoia"{
+                //calibrationButton.setTitle("Calibration", for: .normal)
+                nextcardbutton.setTitle("begin paranoia", for: .normal)
+                //nextcardbutton.Label = "begin paranoia"
                 paranoiaMode = true
                    }
                }
@@ -98,14 +105,34 @@ class GameController: UIViewController {
     @IBAction func exitpressed(_ sender: Any) {
         performSegue(withIdentifier: "backward", sender: self)
     }
+    @IBAction func backpressed(_ sender: Any) {
+        paranoiaMode = false
+        if deck.count == 0 {
+            performSegue(withIdentifier: "GameOver", sender: self)
+        }
+        else {
+            let index = Int.random(in: 0...(deck.count-1))
+            currentcard = deck[index]
+            deck.remove(at: index)
+        }
+        generateCard(newcard: currentcard)
+        backbutton.isEnabled = false
+        backbutton.isHidden = true
+    }
     
     @IBAction func nextcardpressed(_ sender: Any) {
         if paranoiaMode == true {
             let index = Int.random(in: 0...(paranoiaDeck.count-1))
             currentcard = paranoiaDeck[index]
             paranoiaDeck.remove(at: index)
+            //exitbutton.setTitle("back to main game", for: .normal)
+            backbutton.isEnabled = true
+            backbutton.isHidden = false
+            nextcardbutton.setTitle("next card", for: .normal)
             if paranoiaDeck.count == 0 {
                 paranoiaMode = false
+                //backbutton.isEnabled = false
+                //backbutton.isHidden = true
             }
         }
         else if deck.count == 0 {
@@ -116,10 +143,17 @@ class GameController: UIViewController {
             let index = Int.random(in: 0...(deck.count-1))
             currentcard = deck[index]
             deck.remove(at: index)
+            if paranoiaDeck.count == 0 {
+                backbutton.isEnabled = false
+                backbutton.isHidden = true
+            }
+            //exitbutton.setTitle("EXIT", for: .normal)
         }
         generateCard(newcard: currentcard)
         if currentcard.count == 3 {
             if currentcard[2] == " paranoia"{
+                nextcardbutton.setTitle("begin paranoia", for: .normal)
+                //backbutton.isEnabled = true
                 paranoiaMode = true
             }
             
