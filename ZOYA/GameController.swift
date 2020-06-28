@@ -13,6 +13,7 @@ class GameController: UIViewController {
     var truthtable = [false]
     var labletable = ["college", "us", "corona"]
     var waspaused = false
+    var clean = false
     //var currentcard = ["1", "no"]
     
     var paranoiaMode = false
@@ -79,11 +80,32 @@ class GameController: UIViewController {
 
         if waspaused == false {
             deck += makeDeck(fname: "deck")
+            //deck.remove(at: deck.count-1)
             paranoiaDeck += makeDeck(fname: "paranoia")
             for i in 1...truthtable.count {
                 let ex = truthtable[i-1]
                 if ex {
                     deck += makeDeck(fname: labletable[i-1])
+                }
+            }
+            if clean {
+                var i = 0
+                while i < deck.count {
+                    if deck[i].count == 3 && deck[i][2] == " x" {
+                        deck.remove(at: i)
+                    }
+                    else {
+                        i += 1
+                    }
+                }
+                var j = 0
+                while j < paranoiaDeck.count {
+                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" {
+                        paranoiaDeck.remove(at: j)
+                    }
+                    else {
+                        j += 1
+                    }
                 }
             }
             let index = Int.random(in: 0...(deck.count-1))

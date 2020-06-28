@@ -11,6 +11,7 @@ import UIKit
 class ExtensionController: UIViewController {
     
     var truthtable = [false, false, false]
+    var clean = false
     //currently [college pack, us specific pack, corona pack]
     
     //var cmu = false
@@ -18,6 +19,7 @@ class ExtensionController: UIViewController {
     //var corona = false
     
     
+    @IBOutlet weak var cleanbutton: UIButton!
     @IBOutlet weak var collegebutton: UIButton!
     @IBOutlet weak var usbutton: UIButton!
     @IBOutlet weak var coronabutton: UIButton!
@@ -37,6 +39,7 @@ class ExtensionController: UIViewController {
         else if segue.destination is GameController {
             let game = segue.destination as! GameController
             game.truthtable = truthtable
+            game.clean = clean
         }
         
         //nothing yet
@@ -71,6 +74,16 @@ class ExtensionController: UIViewController {
         else {
             truthtable[2] = true
             coronabutton.isSelected = true
+        }
+    }
+    @IBAction func cleanclicked(_ sender: Any) {
+        if clean {
+            clean = false
+            cleanbutton.isSelected = false
+        }
+        else {
+            clean = true
+            cleanbutton.isSelected = true
         }
     }
     

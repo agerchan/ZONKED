@@ -4,7 +4,7 @@
 1: if you have an allergy
 2: who will get married last
 2: who is least athletic
-3: play a round of spin the bottle
+3: play a round of spin the bottle: x
 3: give out a compliment and an insult
-4: tell the story of how you lost your virginity
+4: tell the story of how you lost your virginity: x
 4: who is the least attractive
