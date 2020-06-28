@@ -63,18 +63,59 @@ class GameController: UIViewController {
     func generateCard(newcard: [String]){
         card.text = newcard[1]
         let kind = (Int(newcard[0]) ?? 4) - 1
-        //print(kind)
         self.view.backgroundColor = colors[kind][0]
         category.textColor = colors[kind][1]
         category.text = labels[kind]
         card.textColor = colors[kind][1]
+        
+        //if the current card is the paranoia card
+        if newcard.count == 3 {
+            if newcard[2] == " paranoia"{
+                nextcardbutton.setTitle("begin paranoia", for: .normal)
+                paranoiaMode = true
+            }
+        }
+        //if we already are in paranoia mode
+        else if paranoiaMode {
+            backbutton.isEnabled = true
+            backbutton.isHidden = false
+        }
+    }
+    
+    //gets a new card, based on what the mode is (used in viewDidLoad and nextcardpressed)
+    func pickNewCard(){
+        if paranoiaMode == true {
+            let index = Int.random(in: 0...(paranoiaDeck.count-1))
+            currentcard = paranoiaDeck[index]
+            paranoiaDeck.remove(at: index)
+            //making sure you can leave paranoia mode
+            nextcardbutton.setTitle("next card", for: .normal)
+            if paranoiaDeck.count == 0 {
+                paranoiaMode = false
+            }
+        }
+        //if there are no cards left, go to game over screen
+        else if deck.count == 0 {
+            performSegue(withIdentifier: "GameOver", sender: self)
+        }
+        //else, choose a card out of the regular deck
+        else {
+            let index = Int.random(in: 0...(deck.count-1))
+            currentcard = deck[index]
+            deck.remove(at: index)
+            //if we ran out of paranoia cards and returned without pressing back
+            if paranoiaDeck.count == 0 {
+                backbutton.isEnabled = false
+                backbutton.isHidden = true
+            }
+        }
     }
     
     override func viewDidLoad() {
         backbutton.isHidden = true
         super.viewDidLoad()
 
-        //if the game is beginning
+        //if the game is beginning, compile decks and select a currentcard
         if waspaused == false {
             //generating the decks
             deck += makeDeck(fname: "deck")
@@ -82,64 +123,24 @@ class GameController: UIViewController {
             //adding extension packs
             for i in 1...truthtable.count {
                 let ex = truthtable[i-1]
-                if ex {
-                    deck += makeDeck(fname: labletable[i-1])
-                }
+                if ex { deck += makeDeck(fname: labletable[i-1]) }
             }
             //cleaning the deck
             if clean {
                 var i = 0
                 while i < deck.count {
-                    if deck[i].count == 3 && deck[i][2] == " x" {
-                        deck.remove(at: i)
-                    }
-                    else {
-                        i += 1
-                    }
+                    if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
+                    else { i += 1 }
                 }
                 var j = 0
                 while j < paranoiaDeck.count {
-                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" {
-                        paranoiaDeck.remove(at: j)
-                    }
-                    else {
-                        j += 1
-                    }
+                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
+                    else { j += 1 }
                 }
             }
-            //generating a current card
-            let index = Int.random(in: 0...(deck.count-1))
-            currentcard = deck[index]
-            deck.remove(at: index)
-            generateCard(newcard: currentcard)
-            if currentcard.count == 3 {
-                if currentcard[2] == " paranoia"{
-                    nextcardbutton.setTitle("begin paranoia", for: .normal)
-                    paranoiaMode = true
-                }
-            }
+            pickNewCard()
         }
-            
-        //if returning from help screen
-        else {
-            //adjusting interface to match that of the card
-            generateCard(newcard: currentcard)
-            //if we just pulled the paranoia card
-            if currentcard.count == 3 {
-                if currentcard[2] == " paranoia"{
-                    //calibrationButton.setTitle("Calibration", for: .normal)
-                    nextcardbutton.setTitle("begin paranoia", for: .normal)
-                    //nextcardbutton.Label = "begin paranoia"
-                    paranoiaMode = true
-                }
-            }
-            //if we already are in paranoia mode
-            else if paranoiaMode {
-                backbutton.isEnabled = true
-                backbutton.isHidden = false
-            }
-        }
-        
+        generateCard(newcard: currentcard)
         waspaused = false
     }
     
@@ -183,44 +184,9 @@ class GameController: UIViewController {
     }
     
     @IBAction func nextcardpressed(_ sender: Any) {
-        //if paranoiamode, choose card out of paranoiadeck
-        if paranoiaMode == true {
-            let index = Int.random(in: 0...(paranoiaDeck.count-1))
-            currentcard = paranoiaDeck[index]
-            paranoiaDeck.remove(at: index)
-            //making sure you can leave paranoia mode
-            backbutton.isEnabled = true
-            backbutton.isHidden = false
-            nextcardbutton.setTitle("next card", for: .normal)
-            if paranoiaDeck.count == 0 {
-                paranoiaMode = false
-            }
-        }
-        //if there are no cards left, go to game over screen
-        else if deck.count == 0 {
-            performSegue(withIdentifier: "GameOver", sender: self)
-        }
-        //else, choose a card out of the regular deck
-        else {
-            let index = Int.random(in: 0...(deck.count-1))
-            currentcard = deck[index]
-            deck.remove(at: index)
-            //if we ran out of paranoia cards and returned without pressing back
-            if paranoiaDeck.count == 0 {
-                backbutton.isEnabled = false
-                backbutton.isHidden = true
-            }
-        }
-        
-        //adjust interface accordingly
+        pickNewCard()
         generateCard(newcard: currentcard)
-        if currentcard.count == 3 {
-            if currentcard[2] == " paranoia"{
-                nextcardbutton.setTitle("begin paranoia", for: .normal)
-                paranoiaMode = true
-            }
-            
-        }
+
     }
    
 }
