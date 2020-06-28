@@ -26,6 +26,10 @@ class ExtensionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //cleanbutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
+        //collegebutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
+        //usbutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
+        //coronabutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
         //cmubutton.setTitleColor(UIColor.darkGray, for: .selected)
 
         // Do any additional setup after loading the view.
