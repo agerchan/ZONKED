@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,13 +16,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZOYA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfA-v3-M42">
-                                <rect key="frame" x="98" y="194" width="218.5" height="94"/>
+                                <rect key="frame" x="97.666666666666686" y="194" width="219" height="94"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="72"/>
                                 <color key="textColor" red="0.4197273932180618" green="0.65090673575129532" blue="0.44105728482603462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="399-3e-fxU">
-                                <rect key="frame" x="171.5" y="703" width="71" height="59"/>
+                                <rect key="frame" x="171.66666666666666" y="703" width="71" height="59"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
                                 <state key="normal" title="start">
                                     <color key="titleColor" red="0.88368280440000002" green="0.5013634871" blue="0.45784429840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +32,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gei-WN-E4S">
-                                <rect key="frame" x="25" y="46.5" width="30" height="45"/>
+                                <rect key="frame" x="25" y="46.666666666666657" width="30" height="45"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -72,16 +72,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7Il-Yq-hcM">
-                                <rect key="frame" x="105" y="144" width="204.5" height="290"/>
+                                <rect key="frame" x="104.66666666666667" y="144.00000000000003" width="204.66666666666663" height="289.66666666666674"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select options" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="25C-AJ-ehg">
-                                        <rect key="frame" x="40" y="0.0" width="124" height="22.5"/>
+                                        <rect key="frame" x="40.333333333333329" y="0.0" width="123.99999999999999" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                         <color key="textColor" red="0.88368280440000002" green="0.5013634871" blue="0.45784429840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-HC-ek6">
-                                        <rect key="frame" x="81" y="27.5" width="42" height="35"/>
+                                        <rect key="frame" x="81.333333333333329" y="27.333333333333343" width="42" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="clean">
@@ -92,13 +92,13 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="select extension packs" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8P8-yD-sam">
-                                        <rect key="frame" x="0.0" y="67.5" width="204.5" height="22.5"/>
+                                        <rect key="frame" x="0.0" y="67.333333333333343" width="204.66666666666666" height="22.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                         <color key="textColor" red="0.88368280440000002" green="0.5013634871" blue="0.45784429840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-TA-xnR">
-                                        <rect key="frame" x="74" y="95" width="56" height="35"/>
+                                        <rect key="frame" x="74.333333333333329" y="94.666666666666657" width="55.999999999999986" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="college">
@@ -109,7 +109,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tp-Ge-Cry">
-                                        <rect key="frame" x="63" y="135" width="78" height="35"/>
+                                        <rect key="frame" x="63.333333333333329" y="134.66666666666669" width="77.999999999999986" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="us specific">
@@ -120,7 +120,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6T-zY-LzH">
-                                        <rect key="frame" x="74.5" y="175" width="55" height="35"/>
+                                        <rect key="frame" x="74.999999999999986" y="174.66666666666669" width="55.000000000000014" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="corona">
@@ -131,7 +131,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-bI-1UH">
-                                        <rect key="frame" x="87" y="215" width="30" height="35"/>
+                                        <rect key="frame" x="87.333333333333329" y="214.66666666666669" width="30" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="b">
@@ -139,7 +139,7 @@
                                         </state>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbH-n8-4rE">
-                                        <rect key="frame" x="87" y="255" width="30" height="35"/>
+                                        <rect key="frame" x="87.333333333333329" y="254.66666666666669" width="30" height="35"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="c">
@@ -149,7 +149,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31O-zm-TZa">
-                                <rect key="frame" x="174.5" y="703" width="65" height="59"/>
+                                <rect key="frame" x="174.66666666666666" y="703" width="65" height="59"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="36"/>
                                 <state key="normal" title="GO">
                                     <color key="titleColor" red="0.88368280440000002" green="0.5013634871" blue="0.45784429840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -159,7 +159,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpq-cM-8hO">
-                                <rect key="frame" x="25" y="46.5" width="30" height="45"/>
+                                <rect key="frame" x="25" y="46.666666666666657" width="30" height="45"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -202,7 +202,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-Mo-T5M">
-                                <rect key="frame" x="350" y="51.5" width="39" height="35"/>
+                                <rect key="frame" x="350" y="51.666666666666657" width="39" height="35"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="EXIT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -212,7 +212,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-JH-yJW">
-                                <rect key="frame" x="50" y="409" width="314" height="32.5"/>
+                                <rect key="frame" x="50" y="409" width="314" height="32.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -234,7 +234,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="017-Sf-gCe">
-                                <rect key="frame" x="25" y="46.5" width="30" height="45"/>
+                                <rect key="frame" x="25" y="46.666666666666657" width="30" height="45"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <state key="normal" title="?">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -298,13 +298,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no help for u haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
-                                <rect key="frame" x="50" y="94" width="314" height="22.5"/>
+                                <rect key="frame" x="50" y="94" width="314" height="22.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htb-gA-A3i">
-                                <rect key="frame" x="181.5" y="777" width="51" height="35"/>
+                                <rect key="frame" x="181.66666666666666" y="777" width="51" height="35"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

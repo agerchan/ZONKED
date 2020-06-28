@@ -19,10 +19,10 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is HelpController {
+            //keeps track of what the previous page was when back going from help
             let help = segue.destination as! HelpController
             help.previouspage = "start"
         }
-        //nothing yet
     }
 
     @IBAction func startpressed(_ sender: Any) {

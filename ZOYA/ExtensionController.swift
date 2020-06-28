@@ -11,13 +11,8 @@ import UIKit
 class ExtensionController: UIViewController {
     
     var truthtable = [false, false, false]
-    var clean = false
     //currently [college pack, us specific pack, corona pack]
-    
-    //var cmu = false
-    //var us = false
-    //var corona = false
-    
+        var clean = false
     
     @IBOutlet weak var cleanbutton: UIButton!
     @IBOutlet weak var collegebutton: UIButton!
@@ -26,29 +21,24 @@ class ExtensionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //cleanbutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
-        //collegebutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
-        //usbutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
-        //coronabutton.isSelectedBackgroundView.backgroundColor=[UIColor.darkGray];
-        //cmubutton.setTitleColor(UIColor.darkGray, for: .selected)
-
-        // Do any additional setup after loading the view.
+        //nothing yet
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.destination is HelpController {
+            //keeps track of what the previous page was when back going from help
             let help = segue.destination as! HelpController
             help.previouspage = "extension"
         }
         else if segue.destination is GameController {
+            //conveys information on which extensions and mode are going to be used
             let game = segue.destination as! GameController
             game.truthtable = truthtable
             game.clean = clean
         }
-        
-        //nothing yet
     }
     
+    //recording which options are selected and what values in the truthbable are what
     @IBAction func collegeclicked(_ sender: Any) {
         if truthtable[0] {
             truthtable[0] = false
@@ -58,7 +48,6 @@ class ExtensionController: UIViewController {
             truthtable[0] = true
             collegebutton.isSelected = true
         }
-        //print(truthtable[0])
     }
     @IBAction func usclicked(_ sender: Any) {
         if truthtable[1] {
@@ -91,7 +80,6 @@ class ExtensionController: UIViewController {
         }
     }
     
-
     @IBAction func gopressed(_ sender: Any) {
         performSegue(withIdentifier: "forward2", sender: self)
     }
@@ -99,14 +87,5 @@ class ExtensionController: UIViewController {
     @IBAction func helppressed(_ sender: Any) {
         performSegue(withIdentifier: "extensiontohelp", sender: self)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

@@ -29,11 +29,9 @@ class HelpController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //let game = segue.destination as! GameController
-        //game.truthtable = truthtable
         if segue.destination is GameController {
+            //returning info back to the game
             let game = segue.destination as! GameController
-            //game.previouspage = "start"
             game.truthtable = truthtable
             game.paranoiaMode = paranoiaMode
             game.deck = deck
@@ -46,6 +44,7 @@ class HelpController: UIViewController {
         }
     }
     
+    //figuring out where to return based on information that was passed in
     @IBAction func backpressed(_ sender: Any) {
         if previouspage == "start" {
             performSegue(withIdentifier: "helptostart", sender: self)
@@ -58,14 +57,4 @@ class HelpController: UIViewController {
         }
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
