@@ -12,6 +12,8 @@ class GameController: UIViewController {
     
     var truthtable = [false]
     var labletable = ["college", "us", "corona"]
+    var waspaused = false
+    //var currentcard = ["1", "no"]
     
     var paranoiaMode = false
     
@@ -74,32 +76,61 @@ class GameController: UIViewController {
         //print(truthtable)
         backbutton.isHidden = true
         super.viewDidLoad()
-        deck += makeDeck(fname: "deck")
-        paranoiaDeck += makeDeck(fname: "paranoia")
-        for i in 1...truthtable.count {
-            let ex = truthtable[i-1]
-            if ex {
-                deck += makeDeck(fname: labletable[i-1])
+
+        if waspaused == false {
+            deck += makeDeck(fname: "deck")
+            paranoiaDeck += makeDeck(fname: "paranoia")
+            for i in 1...truthtable.count {
+                let ex = truthtable[i-1]
+                if ex {
+                    deck += makeDeck(fname: labletable[i-1])
+                }
+            }
+            let index = Int.random(in: 0...(deck.count-1))
+            currentcard = deck[index]
+            deck.remove(at: index)
+            generateCard(newcard: currentcard)
+            if currentcard.count == 3 {
+                if currentcard[2] == " paranoia"{
+                    //calibrationButton.setTitle("Calibration", for: .normal)
+                    nextcardbutton.setTitle("begin paranoia", for: .normal)
+                    //nextcardbutton.Label = "begin paranoia"
+                    paranoiaMode = true
+                }
+            }
+        }
+        else {
+            generateCard(newcard: currentcard)
+            if currentcard.count == 3 {
+                if currentcard[2] == " paranoia"{
+                    //calibrationButton.setTitle("Calibration", for: .normal)
+                    nextcardbutton.setTitle("begin paranoia", for: .normal)
+                    //nextcardbutton.Label = "begin paranoia"
+                    paranoiaMode = true
+                }
+            }
+            else if paranoiaMode {
+                backbutton.isEnabled = true
+                backbutton.isHidden = false
             }
         }
         
-        //Place First Card
-        let index = Int.random(in: 0...(deck.count-1))
-        currentcard = deck[index]
-        deck.remove(at: index)
-        generateCard(newcard: currentcard)
-        if currentcard.count == 3 {
-            if currentcard[2] == "paranoia"{
-                //calibrationButton.setTitle("Calibration", for: .normal)
-                nextcardbutton.setTitle("begin paranoia", for: .normal)
-                //nextcardbutton.Label = "begin paranoia"
-                paranoiaMode = true
-                   }
-               }
+        waspaused = false
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        //nothing yet
+        if segue.destination is HelpController {
+            let help = segue.destination as! HelpController
+            help.previouspage = "game"
+            help.truthtable = truthtable
+            help.paranoiaMode = paranoiaMode
+            help.deck = deck
+            help.paranoiaDeck = paranoiaDeck
+            help.currentcard = currentcard
+            help.exitbutton = exitbutton
+            help.backbutton = backbutton
+            help.nextcardbutton = nextcardbutton
+        }
     }
     
     @IBAction func exitpressed(_ sender: Any) {
@@ -118,6 +149,9 @@ class GameController: UIViewController {
         generateCard(newcard: currentcard)
         backbutton.isEnabled = false
         backbutton.isHidden = true
+    }
+    @IBAction func helppressed(_ sender: Any) {
+        performSegue(withIdentifier: "gametohelp", sender: self)
     }
     
     @IBAction func nextcardpressed(_ sender: Any) {

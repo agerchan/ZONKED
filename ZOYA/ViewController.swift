@@ -18,11 +18,18 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.destination is HelpController {
+            let help = segue.destination as! HelpController
+            help.previouspage = "start"
+        }
         //nothing yet
     }
 
     @IBAction func startpressed(_ sender: Any) {
         performSegue(withIdentifier: "forward1", sender: self)
+    }
+    @IBAction func helppressed(_ sender: Any) {
+        performSegue(withIdentifier: "starttohelp", sender: self)
     }
     
 }

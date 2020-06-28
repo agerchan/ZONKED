@@ -31,19 +31,32 @@
                                     <action selector="startpressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pta-DH-0AU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gei-WN-E4S">
+                                <rect key="frame" x="25" y="826" width="30" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="helppressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIV-3o-NeQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90000000000000002" blue="0.90000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="399-3e-fxU" secondAttribute="bottom" constant="100" id="7h8-cQ-yRt"/>
                             <constraint firstItem="bfA-v3-M42" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CDZ-jS-hLU"/>
+                            <constraint firstItem="gei-WN-E4S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="PQI-Rb-vyq"/>
                             <constraint firstItem="bfA-v3-M42" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="WbI-b1-DQc"/>
                             <constraint firstItem="399-3e-fxU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mla-UF-oVO"/>
+                            <constraint firstAttribute="bottom" secondItem="gei-WN-E4S" secondAttribute="bottom" constant="25" id="uAP-QR-QoA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="logo" destination="bfA-v3-M42" id="3Gv-52-2H0"/>
                         <segue destination="Crm-J4-mJC" kind="presentation" identifier="forward1" animates="NO" modalPresentationStyle="fullScreen" id="dFh-rj-dyG"/>
+                        <segue destination="Csz-py-LCu" kind="presentation" identifier="starttohelp" animates="NO" modalPresentationStyle="fullScreen" id="DwD-uG-inH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -130,6 +143,16 @@
                                     <action selector="gopressed:" destination="Crm-J4-mJC" eventType="touchUpInside" id="hbq-AZ-6r2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpq-cM-8hO">
+                                <rect key="frame" x="25" y="826" width="30" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="helppressed:" destination="Crm-J4-mJC" eventType="touchUpInside" id="Yn7-8T-HCd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -137,6 +160,8 @@
                             <constraint firstItem="31O-zm-TZa" firstAttribute="centerX" secondItem="doT-Th-mR3" secondAttribute="centerX" id="5VR-1N-BdM"/>
                             <constraint firstItem="7Il-Yq-hcM" firstAttribute="centerX" secondItem="doT-Th-mR3" secondAttribute="centerX" id="BIB-5P-pLq"/>
                             <constraint firstItem="qp8-On-yKa" firstAttribute="bottom" secondItem="31O-zm-TZa" secondAttribute="bottom" constant="100" id="E0q-N9-Z9h"/>
+                            <constraint firstItem="kpq-cM-8hO" firstAttribute="leading" secondItem="qp8-On-yKa" secondAttribute="leading" constant="25" id="Q5K-A7-4oZ"/>
+                            <constraint firstAttribute="bottom" secondItem="kpq-cM-8hO" secondAttribute="bottom" constant="25" id="jjL-Pb-xoH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qp8-On-yKa"/>
                     </view>
@@ -145,6 +170,7 @@
                         <outlet property="coronabutton" destination="V6T-zY-LzH" id="mlQ-Ww-HUB"/>
                         <outlet property="usbutton" destination="6tp-Ge-Cry" id="lDV-cB-Jv3"/>
                         <segue destination="UTc-vp-2Yb" kind="presentation" identifier="forward2" animates="NO" modalPresentationStyle="fullScreen" id="nks-6t-a6K"/>
+                        <segue destination="Csz-py-LCu" kind="presentation" identifier="extensiontohelp" animates="NO" modalPresentationStyle="fullScreen" id="Lnn-8G-Ro7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9I4-Wy-gUX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -191,6 +217,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="017-Sf-gCe">
+                                <rect key="frame" x="25" y="826" width="30" height="45"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
+                                <state key="normal" title="?">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="helppressed:" destination="UTc-vp-2Yb" eventType="touchUpInside" id="2Hn-RP-mlh"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIZ-o7-oGP">
                                 <rect key="frame" x="25" y="69" width="51" height="35"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
@@ -210,8 +246,10 @@
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="trailing" secondItem="71x-Mo-T5M" secondAttribute="trailing" constant="25" id="5ST-ca-Adj"/>
                             <constraint firstItem="xuc-uj-YHH" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="7nh-2U-Nnw"/>
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="175" id="D82-yR-WCe"/>
+                            <constraint firstAttribute="bottom" secondItem="017-Sf-gCe" secondAttribute="bottom" constant="25" id="Evw-lx-LXB"/>
                             <constraint firstItem="EIZ-o7-oGP" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="25" id="LXD-Cb-0HY"/>
                             <constraint firstItem="71x-Mo-T5M" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="25" id="T91-An-13T"/>
+                            <constraint firstItem="017-Sf-gCe" firstAttribute="leading" secondItem="j1V-PU-gQu" secondAttribute="leading" constant="25" id="Va0-JB-4Mw"/>
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="mON-4U-nCP"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="trailing" secondItem="Jh6-JH-yJW" secondAttribute="trailing" constant="50" id="oq8-V9-PmO"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="bottom" secondItem="xuc-uj-YHH" secondAttribute="bottom" constant="100" id="pER-QS-3fS"/>
@@ -228,11 +266,57 @@
                         <outlet property="nextcardbutton" destination="xuc-uj-YHH" id="Pfl-8L-vuP"/>
                         <segue destination="BYZ-38-t0r" kind="presentation" identifier="backward" animates="NO" modalPresentationStyle="fullScreen" id="Jzq-oB-uNs"/>
                         <segue destination="JZh-Sz-iDM" kind="presentation" identifier="GameOver" animates="NO" modalPresentationStyle="fullScreen" id="fH3-gQ-c8S"/>
+                        <segue destination="Csz-py-LCu" kind="presentation" identifier="gametohelp" animates="NO" modalPresentationStyle="fullScreen" id="S03-Iv-oHs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="my6-3e-KS1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1805.7971014492755" y="114.50892857142857"/>
+        </scene>
+        <!--Help Controller-->
+        <scene sceneID="NlT-vP-D50">
+            <objects>
+                <viewController id="Csz-py-LCu" customClass="HelpController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6jt-PB-cMy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no help for u haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
+                                <rect key="frame" x="50" y="94" width="314" height="22.5"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htb-gA-A3i">
+                                <rect key="frame" x="181.5" y="777" width="51" height="35"/>
+                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
+                                <state key="normal" title="BACK">
+                                    <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="backpressed:" destination="Csz-py-LCu" eventType="touchUpInside" id="aEF-2a-l8f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="orq-cP-gie" firstAttribute="top" secondItem="3f4-wS-Fp4" secondAttribute="top" constant="50" id="0hp-Ys-z8P"/>
+                            <constraint firstItem="3f4-wS-Fp4" firstAttribute="bottom" secondItem="htb-gA-A3i" secondAttribute="bottom" constant="50" id="8IU-tf-LB6"/>
+                            <constraint firstItem="3f4-wS-Fp4" firstAttribute="trailing" secondItem="orq-cP-gie" secondAttribute="trailing" constant="50" id="NH6-xG-WAS"/>
+                            <constraint firstItem="orq-cP-gie" firstAttribute="leading" secondItem="3f4-wS-Fp4" secondAttribute="leading" constant="50" id="c7k-cw-PwJ"/>
+                            <constraint firstItem="htb-gA-A3i" firstAttribute="centerX" secondItem="6jt-PB-cMy" secondAttribute="centerX" id="exE-eJ-bPb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3f4-wS-Fp4"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="helptostart" animates="NO" modalPresentationStyle="fullScreen" id="jW2-Up-hJy"/>
+                        <segue destination="Crm-J4-mJC" kind="presentation" identifier="helptoextension" animates="NO" modalPresentationStyle="fullScreen" id="3Lo-Nd-a1n"/>
+                        <segue destination="UTc-vp-2Yb" kind="presentation" identifier="helptogame" animates="NO" modalPresentationStyle="fullScreen" id="lUI-Oo-YKi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="09N-HH-Hev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="955" y="911"/>
         </scene>
         <!--Game Over Controller-->
         <scene sceneID="Af3-Lo-E8o">
@@ -278,6 +362,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="Lnn-8G-Ro7"/>
+        <segue reference="nks-6t-a6K"/>
+        <segue reference="dFh-rj-dyG"/>
         <segue reference="Jzq-oB-uNs"/>
     </inferredMetricsTieBreakers>
 </document>

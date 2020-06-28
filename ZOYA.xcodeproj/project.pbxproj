@@ -22,6 +22,7 @@
 		95EB8D6D24A7CC6B0046BF01 /* college.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6C24A7CC6B0046BF01 /* college.txt */; };
 		95EB8D6F24A7CC7A0046BF01 /* us.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6E24A7CC7A0046BF01 /* us.txt */; };
 		95EB8D7124A7E3E10046BF01 /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D7024A7E3E10046BF01 /* GameOverController.swift */; };
+		95EB8D7324A815DC0046BF01 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D7224A815DC0046BF01 /* HelpController.swift */; };
 		9830CFA924A7DFBA00084098 /* paranoia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9830CFA824A7DFBA00084098 /* paranoia.txt */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		95EB8D6C24A7CC6B0046BF01 /* college.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college.txt; sourceTree = "<group>"; };
 		95EB8D6E24A7CC7A0046BF01 /* us.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = us.txt; sourceTree = "<group>"; };
 		95EB8D7024A7E3E10046BF01 /* GameOverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverController.swift; sourceTree = "<group>"; };
+		95EB8D7224A815DC0046BF01 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		9830CFA824A7DFBA00084098 /* paranoia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paranoia.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,6 +123,7 @@
 				95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */,
 				9506BE0524A66F0C004A0BBD /* GameController.swift */,
 				95EB8D7024A7E3E10046BF01 /* GameOverController.swift */,
+				95EB8D7224A815DC0046BF01 /* HelpController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
 				9830CFA824A7DFBA00084098 /* paranoia.txt */,
 				9506BE0724A69DEB004A0BBD /* deck.txt */,
@@ -289,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9506BDDA24A66ED9004A0BBD /* ViewController.swift in Sources */,
+				95EB8D7324A815DC0046BF01 /* HelpController.swift in Sources */,
 				95EB8D7124A7E3E10046BF01 /* GameOverController.swift in Sources */,
 				95EB8D5524A6A9B90046BF01 /* ExtensionController.swift in Sources */,
 				9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */,

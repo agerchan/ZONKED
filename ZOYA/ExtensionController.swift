@@ -30,8 +30,15 @@ class ExtensionController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let game = segue.destination as! GameController
-        game.truthtable = truthtable
+        if segue.destination is HelpController {
+            let help = segue.destination as! HelpController
+            help.previouspage = "extension"
+        }
+        else if segue.destination is GameController {
+            let game = segue.destination as! GameController
+            game.truthtable = truthtable
+        }
+        
         //nothing yet
     }
     
@@ -70,6 +77,10 @@ class ExtensionController: UIViewController {
 
     @IBAction func gopressed(_ sender: Any) {
         performSegue(withIdentifier: "forward2", sender: self)
+    }
+    
+    @IBAction func helppressed(_ sender: Any) {
+        performSegue(withIdentifier: "extensiontohelp", sender: self)
     }
     /*
     // MARK: - Navigation
