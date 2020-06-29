@@ -24,6 +24,8 @@
 		95EB8D7124A7E3E10046BF01 /* GameOverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D7024A7E3E10046BF01 /* GameOverController.swift */; };
 		95EB8D7324A815DC0046BF01 /* HelpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D7224A815DC0046BF01 /* HelpController.swift */; };
 		9830CFA924A7DFBA00084098 /* paranoia.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9830CFA824A7DFBA00084098 /* paranoia.txt */; };
+		986D232324AA360B00878CDD /* bug!.png in Resources */ = {isa = PBXBuildFile; fileRef = 986D232124AA360B00878CDD /* bug!.png */; };
+		986D232424AA360B00878CDD /* buzzed bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 986D232224AA360B00878CDD /* buzzed bug.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		95EB8D7024A7E3E10046BF01 /* GameOverController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverController.swift; sourceTree = "<group>"; };
 		95EB8D7224A815DC0046BF01 /* HelpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpController.swift; sourceTree = "<group>"; };
 		9830CFA824A7DFBA00084098 /* paranoia.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = paranoia.txt; sourceTree = "<group>"; };
+		986D232124AA360B00878CDD /* bug!.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bug!.png"; sourceTree = "<group>"; };
+		986D232224AA360B00878CDD /* buzzed bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buzzed bug.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,7 @@
 				95EB8D6E24A7CC7A0046BF01 /* us.txt */,
 				95EB8D6A24A7CC610046BF01 /* corona.txt */,
 				9506BDDE24A66EDB004A0BBD /* Assets.xcassets */,
+				986D232624AA362100878CDD /* images */,
 				9506BDE024A66EDB004A0BBD /* LaunchScreen.storyboard */,
 				9506BDE324A66EDB004A0BBD /* Info.plist */,
 			);
@@ -153,6 +158,15 @@
 				9506BDF924A66EDB004A0BBD /* Info.plist */,
 			);
 			path = ZOYAUITests;
+			sourceTree = "<group>";
+		};
+		986D232624AA362100878CDD /* images */ = {
+			isa = PBXGroup;
+			children = (
+				986D232224AA360B00878CDD /* buzzed bug.png */,
+				986D232124AA360B00878CDD /* bug!.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,12 +275,14 @@
 			files = (
 				95EB8D6F24A7CC7A0046BF01 /* us.txt in Resources */,
 				9506BDE224A66EDB004A0BBD /* LaunchScreen.storyboard in Resources */,
+				986D232324AA360B00878CDD /* bug!.png in Resources */,
 				95EB8D6B24A7CC610046BF01 /* corona.txt in Resources */,
 				95EB8D6D24A7CC6B0046BF01 /* college.txt in Resources */,
 				9506BE0824A69DEC004A0BBD /* deck.txt in Resources */,
 				9830CFA924A7DFBA00084098 /* paranoia.txt in Resources */,
 				9506BDDF24A66EDB004A0BBD /* Assets.xcassets in Resources */,
 				9506BDDD24A66ED9004A0BBD /* Main.storyboard in Resources */,
+				986D232424AA360B00878CDD /* buzzed bug.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
