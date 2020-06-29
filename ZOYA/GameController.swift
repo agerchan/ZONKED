@@ -22,7 +22,8 @@ class GameController: UIViewController {
     var paranoiaDeck = [[String]]()
     //initializing decks
     
-    let colors = [[UIColor.init(displayP3Red: 0.15, green: 0.35, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 1, blue: 0.85, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.15, green: 0.15, blue: 0.35, alpha: 1), UIColor.init(displayP3Red: 0.85, green: 0.85, blue: 1, alpha: 1)], [UIColor.init(displayP3Red: 0.35, green: 0.15, blue: 0.15, alpha: 1), UIColor.init(displayP3Red: 1, green: 0.85, blue: 0.85, alpha: 1)], [UIColor.black, UIColor.white]]
+    let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 0.51, green: 0.22, blue: 0.93, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 0.23, green: 0.53, blue: 1, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 1, green: 0, blue: 0.43, alpha: 1), UIColor.white],[ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white]]
+    
     let labels = ["BUZ'D", "WHO", "misc", "ToD", "paranoia"]
     //1 = buz'd (green)
     //2 = WHO (purple)
