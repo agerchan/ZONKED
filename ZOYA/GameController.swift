@@ -22,9 +22,22 @@ class GameController: UIViewController {
     var paranoiaDeck = [[String]]()
     //initializing decks
     
-    let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 0.51, green: 0.22, blue: 0.93, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 0.23, green: 0.53, blue: 1, alpha: 1), UIColor.white], [UIColor.init(displayP3Red: 1, green: 0, blue: 0.43, alpha: 1), UIColor.white],[ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white]]
+    let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white, "PinkNext", "PinkExit"],
+                  
+                  [UIColor.init(displayP3Red: 0.51, green: 0.22, blue: 0.93, alpha: 1), UIColor.white, "BlueNext", "BlueExit"],
+                  
+                  [UIColor.init(displayP3Red: 0.23, green: 0.53, blue: 1, alpha: 1), UIColor.white, "OrangeNext", "OrangeExit"],
+                  
+                  [UIColor.init(displayP3Red: 1, green: 0, blue: 0.43, alpha: 1), UIColor.white, "YellowNext", "YellowExit"],
+                  
+                  [ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white, "PurpleNext", "PurpleExit"]]
     
-    let labels = ["BUZ'D", "WHO", "misc", "ToD", "paranoia"]
+    let labels = ["BUZ'D", "WHO", "MISC", "ToD", "paranoia"]
+    
+    //IMAGES FOR BUTTON SWITCH
+    //let image = UIImage(named: "paranoiaButton")! as UIImage
+    //let image2 = UIImage(named: "nextCardButton")! as UIImage
+    
     //1 = buz'd (green)
     //2 = WHO (purple)
     //3 = misc (blue)
@@ -64,15 +77,24 @@ class GameController: UIViewController {
     func generateCard(newcard: [String]){
         card.text = newcard[1]
         let kind = (Int(newcard[0]) ?? 4) - 1
-        self.view.backgroundColor = colors[kind][0]
-        category.textColor = colors[kind][1]
+        let image = UIImage(named: colors[kind][2] as! String )! as UIImage
+        let image2 = UIImage(named: colors[kind][3] as! String )! as UIImage
+        self.view.backgroundColor = colors[kind][0] as? UIColor
+        category.textColor = colors[kind][1] as? UIColor
         category.text = labels[kind]
-        card.textColor = colors[kind][1]
+        card.textColor = colors[kind][1] as? UIColor
+        nextcardbutton.setImage(image, for: .normal)
+        exitbutton.setImage(image2, for: .normal)
+    
+        //colors[kind][2]
         
         //if the current card is the paranoia card
         if newcard.count == 3 {
             if newcard[2] == " paranoia"{
-                nextcardbutton.setTitle("begin paranoia", for: .normal)
+                let image = UIImage(named: "OrangeNextP" )! as UIImage
+                nextcardbutton.setImage(image, for: .normal)
+                //nextcardbutton.setImage("paranoiaButton": UIImage?, for: .normal)
+                //nextcardbutton.setTitle("begin paranoia", for: .normal)
                 paranoiaMode = true
             }
         }
@@ -90,7 +112,12 @@ class GameController: UIViewController {
             currentcard = paranoiaDeck[index]
             paranoiaDeck.remove(at: index)
             //making sure you can leave paranoia mode
-            nextcardbutton.setTitle("next card", for: .normal)
+            
+            
+            //nextcardbutton.setImage(image2, for: .normal)
+            
+            
+            //nextcardbutton.setTitle("next card", for: .normal)
             if paranoiaDeck.count == 0 {
                 paranoiaMode = false
             }

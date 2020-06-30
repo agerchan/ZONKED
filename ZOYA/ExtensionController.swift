@@ -12,9 +12,19 @@ class ExtensionController: UIViewController {
     
     var truthtable = [false, false, false]
     //currently [college pack, us specific pack, corona pack]
-        var clean = false
+    var clean = false
+    var mild = false
+    var dirty = false
+
+    
+    var image = UIImage(named: "dot" )! as UIImage
     
     @IBOutlet weak var cleanbutton: UIButton!
+    @IBOutlet weak var mildbutton: UIButton!
+    
+    @IBOutlet weak var dirtybutton: UIButton!
+    
+    
     @IBOutlet weak var collegebutton: UIButton!
     @IBOutlet weak var usbutton: UIButton!
     @IBOutlet weak var coronabutton: UIButton!
@@ -69,15 +79,49 @@ class ExtensionController: UIViewController {
             coronabutton.isSelected = true
         }
     }
+    
     @IBAction func cleanclicked(_ sender: Any) {
         if clean {
+            image = UIImage(named: "dot" )! as UIImage
             clean = false
             cleanbutton.isSelected = false
         }
         else {
+            image = UIImage(named: "greenDot" )! as UIImage
             clean = true
+            
             cleanbutton.isSelected = true
         }
+    cleanbutton.setImage(image, for: .normal)
+    }
+    
+    @IBAction func Mild(_ sender: Any) {
+        if mild {
+            image = UIImage(named: "dot" )! as UIImage
+            mild = false
+            mildbutton.isSelected = false
+            }
+        else {
+            image = UIImage(named: "greenDot" )! as UIImage
+            mild = true
+            mildbutton.isSelected = true
+        }
+        mildbutton.setImage(image, for: .normal)
+        }
+    
+    
+    @IBAction func Dirty(_ sender: Any) {
+        if dirty {
+            image = UIImage(named: "dot" )! as UIImage
+            dirty = false
+            dirtybutton.isSelected = false
+            }
+        else {
+            image = UIImage(named: "greenDot" )! as UIImage
+            dirty = true
+            dirtybutton.isSelected = true
+        }
+        dirtybutton.setImage(image, for: .normal)
     }
     
     @IBAction func gopressed(_ sender: Any) {
