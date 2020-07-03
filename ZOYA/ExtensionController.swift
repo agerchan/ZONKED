@@ -15,13 +15,13 @@ class ExtensionController: UIViewController {
     var clean = false
     var mild = false
     var dirty = false
+    var filth = 1
 
     
     var image = UIImage(named: "dot" )! as UIImage
     
     @IBOutlet weak var cleanbutton: UIButton!
     @IBOutlet weak var mildbutton: UIButton!
-    
     @IBOutlet weak var dirtybutton: UIButton!
     
     
@@ -45,6 +45,7 @@ class ExtensionController: UIViewController {
             let game = segue.destination as! GameController
             game.truthtable = truthtable
             game.clean = clean
+            game.filth = filth
         }
     }
     
@@ -81,47 +82,72 @@ class ExtensionController: UIViewController {
     }
     
     @IBAction func cleanclicked(_ sender: Any) {
-        if clean {
-            image = UIImage(named: "dot" )! as UIImage
-            clean = false
-            cleanbutton.isSelected = false
+        if filth != 0 {
+            cleanbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            mildbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            dirtybutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            filth = 0
+            //clean = true
+            //image = UIImage(named: "dot" )! as UIImage
         }
-        else {
-            image = UIImage(named: "greenDot" )! as UIImage
-            clean = true
-            
-            cleanbutton.isSelected = true
-        }
-    cleanbutton.setImage(image, for: .normal)
+        
+//
+//        if clean {
+//            image = UIImage(named: "dot" )! as UIImage
+//            clean = false
+//            cleanbutton.isSelected = false
+//        }
+//        else {
+//            image = UIImage(named: "greenDot" )! as UIImage
+//            clean = true
+//
+//            cleanbutton.isSelected = true
+//        }
+    //cleanbutton.setImage(image, for: .normal)
     }
     
     @IBAction func Mild(_ sender: Any) {
-        if mild {
-            image = UIImage(named: "dot" )! as UIImage
-            mild = false
-            mildbutton.isSelected = false
-            }
-        else {
-            image = UIImage(named: "greenDot" )! as UIImage
-            mild = true
-            mildbutton.isSelected = true
+        if filth != 1 {
+            cleanbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            mildbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            dirtybutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            filth = 1
+            //clean = false
         }
-        mildbutton.setImage(image, for: .normal)
+        
+//        if mild {
+//            image = UIImage(named: "dot" )! as UIImage
+//            mild = false
+//            mildbutton.isSelected = false
+//            }
+//        else {
+//            image = UIImage(named: "greenDot" )! as UIImage
+//            mild = true
+//            mildbutton.isSelected = true
+//        }
+//        mildbutton.setImage(image, for: .normal)
         }
     
     
     @IBAction func Dirty(_ sender: Any) {
-        if dirty {
-            image = UIImage(named: "dot" )! as UIImage
-            dirty = false
-            dirtybutton.isSelected = false
-            }
-        else {
-            image = UIImage(named: "greenDot" )! as UIImage
-            dirty = true
-            dirtybutton.isSelected = true
+        if filth != 2 {
+            cleanbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            mildbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
+            dirtybutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            filth = 2
+            //clean = true
         }
-        dirtybutton.setImage(image, for: .normal)
+//        if dirty {
+//            image = UIImage(named: "dot" )! as UIImage
+//            dirty = false
+//            dirtybutton.isSelected = false
+//            }
+//        else {
+//            image = UIImage(named: "greenDot" )! as UIImage
+//            dirty = true
+//            dirtybutton.isSelected = true
+//        }
+//        dirtybutton.setImage(image, for: .normal)
     }
     
     @IBAction func gopressed(_ sender: Any) {

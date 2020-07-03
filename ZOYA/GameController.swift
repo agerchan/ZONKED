@@ -13,7 +13,9 @@ class GameController: UIViewController {
     var truthtable = [false]
     var labletable = ["college", "us", "corona"]
     //keeping track of which options correspond to which filenames
+    var filth = 1
     var clean = false
+    var irl = false
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false
@@ -153,8 +155,11 @@ class GameController: UIViewController {
                 let ex = truthtable[i-1]
                 if ex { deck += makeDeck(fname: labletable[i-1]) }
             }
+            if (filth == 2) {
+                //add filthy deck
+            }
             //cleaning the deck
-            if clean {
+            else if (filth == 0) {
                 var i = 0
                 while i < deck.count {
                     if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
@@ -165,6 +170,9 @@ class GameController: UIViewController {
                     if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
                     else { j += 1 }
                 }
+            }
+            if irl {
+                //remove irl cards
             }
             pickNewCard()
         }
