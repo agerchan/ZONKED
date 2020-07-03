@@ -11,11 +11,11 @@ import UIKit
 class GameController: UIViewController {
     
     var truthtable = [false]
-    var labletable = ["college", "us", "corona"]
+    var labletable = ["college", "brutal", "corona"]
     //keeping track of which options correspond to which filenames
     var filth = 1
-    var clean = false
-    var irl = false
+    //var clean = false
+    var irl = true
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false
@@ -157,22 +157,37 @@ class GameController: UIViewController {
             }
             if (filth == 2) {
                 //add filthy deck
+                deck += makeDeck(fname: "dirty")
             }
             //cleaning the deck
             else if (filth == 0) {
                 var i = 0
                 while i < deck.count {
-                    if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
+                    //if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
+                    if deck[i].count == 3 && deck[i][2].contains("x") { deck.remove(at: i) }
                     else { i += 1 }
                 }
                 var j = 0
                 while j < paranoiaDeck.count {
-                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
+                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("x") { paranoiaDeck.remove(at: j) }
+                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
                     else { j += 1 }
                 }
             }
-            if irl {
+            if (irl == false) {
                 //remove irl cards
+                var i = 0
+                while i < deck.count {
+                    //if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
+                    if deck[i].count == 3 && deck[i][2].contains("i") { deck.remove(at: i) }
+                    else { i += 1 }
+                }
+                var j = 0
+                while j < paranoiaDeck.count {
+                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("i") { paranoiaDeck.remove(at: j) }
+                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
+                    else { j += 1 }
+                }
             }
             pickNewCard()
         }
@@ -193,6 +208,8 @@ class GameController: UIViewController {
             help.exitbutton = exitbutton
             help.backbutton = backbutton
             help.nextcardbutton = nextcardbutton
+            help.filth = filth
+            help.irl = irl
         }
     }
     

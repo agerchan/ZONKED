@@ -14,6 +14,8 @@ class HelpController: UIViewController {
     
     //which variables we may have to take from game
     var truthtable = [false]
+    var filth = 1
+    var irl = true
     var paranoiaMode = false
     var deck = [[String]]()
     var paranoiaDeck = [[String]]()

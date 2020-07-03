@@ -17,6 +17,8 @@
 		9506BDF824A66EDB004A0BBD /* ZOYAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */; };
 		9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BE0524A66F0C004A0BBD /* GameController.swift */; };
 		9506BE0824A69DEC004A0BBD /* deck.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9506BE0724A69DEB004A0BBD /* deck.txt */; };
+		95D894A724AFE5A7008B0694 /* dirty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D894A624AFE5A7008B0694 /* dirty.txt */; };
+		95D894A924AFE803008B0694 /* brutal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D894A824AFE803008B0694 /* brutal.txt */; };
 		95EB8D5524A6A9B90046BF01 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */; };
 		95EB8D6B24A7CC610046BF01 /* corona.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6A24A7CC610046BF01 /* corona.txt */; };
 		95EB8D6D24A7CC6B0046BF01 /* college.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95EB8D6C24A7CC6B0046BF01 /* college.txt */; };
@@ -84,6 +86,8 @@
 		9506BDF924A66EDB004A0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9506BE0524A66F0C004A0BBD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9506BE0724A69DEB004A0BBD /* deck.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deck.txt; sourceTree = "<group>"; };
+		95D894A624AFE5A7008B0694 /* dirty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dirty.txt; sourceTree = "<group>"; };
+		95D894A824AFE803008B0694 /* brutal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brutal.txt; sourceTree = "<group>"; };
 		95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
 		95EB8D6A24A7CC610046BF01 /* corona.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = corona.txt; sourceTree = "<group>"; };
 		95EB8D6C24A7CC6B0046BF01 /* college.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = college.txt; sourceTree = "<group>"; };
@@ -174,7 +178,9 @@
 				95EB8D7224A815DC0046BF01 /* HelpController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
 				9830CFA824A7DFBA00084098 /* paranoia.txt */,
+				95D894A824AFE803008B0694 /* brutal.txt */,
 				9506BE0724A69DEB004A0BBD /* deck.txt */,
+				95D894A624AFE5A7008B0694 /* dirty.txt */,
 				95EB8D6C24A7CC6B0046BF01 /* college.txt */,
 				95EB8D6E24A7CC7A0046BF01 /* us.txt */,
 				95EB8D6A24A7CC610046BF01 /* corona.txt */,
@@ -346,6 +352,7 @@
 				986D232324AA360B00878CDD /* bug!.png in Resources */,
 				986D236124AAABE300878CDD /* BlueExit.png in Resources */,
 				95EB8D6B24A7CC610046BF01 /* corona.txt in Resources */,
+				95D894A724AFE5A7008B0694 /* dirty.txt in Resources */,
 				986D235F24AAABE300878CDD /* YellowExit.png in Resources */,
 				986D235A24AAABE300878CDD /* PinkNext.png in Resources */,
 				986D232824AA5E3C00878CDD /* StartButton.png in Resources */,
@@ -356,6 +363,7 @@
 				986D233024AA5FAD00878CDD /* RestartButton.png in Resources */,
 				986D232E24AA5FA900878CDD /* GoButton.png in Resources */,
 				986D236024AAABE300878CDD /* YellowNext.png in Resources */,
+				95D894A924AFE803008B0694 /* brutal.txt in Resources */,
 				9506BE0824A69DEC004A0BBD /* deck.txt in Resources */,
 				9830CFA924A7DFBA00084098 /* paranoia.txt in Resources */,
 				986D235E24AAABE300878CDD /* PurpleExit.png in Resources */,

@@ -11,11 +11,12 @@ import UIKit
 class ExtensionController: UIViewController {
     
     var truthtable = [false, false, false]
-    //currently [college pack, us specific pack, corona pack]
+    //currently [college pack, brutal pack, corona pack]
     var clean = false
-    var mild = false
-    var dirty = false
+    //var mild = false
+    //var dirty = false
     var filth = 1
+    var irl = true
 
     
     var image = UIImage(named: "dot" )! as UIImage
@@ -26,11 +27,13 @@ class ExtensionController: UIViewController {
     
     
     @IBOutlet weak var collegebutton: UIButton!
-    @IBOutlet weak var usbutton: UIButton!
+    @IBOutlet weak var brutalbutton: UIButton!
     @IBOutlet weak var coronabutton: UIButton!
+    @IBOutlet weak var distancebutton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        mildbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
         //nothing yet
     }
     
@@ -44,8 +47,9 @@ class ExtensionController: UIViewController {
             //conveys information on which extensions and mode are going to be used
             let game = segue.destination as! GameController
             game.truthtable = truthtable
-            game.clean = clean
+            //game.clean = clean
             game.filth = filth
+            game.irl = irl
         }
     }
     
@@ -60,14 +64,14 @@ class ExtensionController: UIViewController {
             collegebutton.isSelected = true
         }
     }
-    @IBAction func usclicked(_ sender: Any) {
+    @IBAction func brutalclicked(_ sender: Any) {
         if truthtable[1] {
             truthtable[1] = false
-            usbutton.isSelected = false
+            brutalbutton.isSelected = false
         }
         else {
             truthtable[1] = true
-            usbutton.isSelected = true
+            brutalbutton.isSelected = true
         }
     }
     @IBAction func coronaclicked(_ sender: Any) {
@@ -78,6 +82,16 @@ class ExtensionController: UIViewController {
         else {
             truthtable[2] = true
             coronabutton.isSelected = true
+        }
+    }
+    @IBAction func distanceclicked(_ sender: Any) {
+        if irl {
+            irl = false
+            distancebutton.isSelected = false
+        }
+        else {
+            irl = true
+            distancebutton.isSelected = true
         }
     }
     
