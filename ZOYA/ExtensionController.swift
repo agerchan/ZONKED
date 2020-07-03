@@ -34,7 +34,28 @@ class ExtensionController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         mildbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
-        //nothing yet
+        
+        //making buttons have shadows when selected (temporary)
+        collegebutton.layer.shadowColor = UIColor.clear.cgColor
+        //collegebutton.setTitleShadowColor(UIColor.clear, for: .selected)
+        collegebutton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        collegebutton.layer.shadowRadius = 5
+        collegebutton.layer.shadowOpacity = 1.0
+        
+        brutalbutton.layer.shadowColor = UIColor.clear.cgColor
+        brutalbutton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        brutalbutton.layer.shadowRadius = 5
+        brutalbutton.layer.shadowOpacity = 1.0
+        
+        coronabutton.layer.shadowColor = UIColor.clear.cgColor
+        coronabutton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        coronabutton.layer.shadowRadius = 5
+        coronabutton.layer.shadowOpacity = 1.0
+        
+        distancebutton.layer.shadowColor = UIColor.clear.cgColor
+        distancebutton.layer.shadowOffset = CGSize(width: 5, height: 5)
+        distancebutton.layer.shadowRadius = 5
+        distancebutton.layer.shadowOpacity = 1.0
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -58,40 +79,60 @@ class ExtensionController: UIViewController {
         if truthtable[0] {
             truthtable[0] = false
             collegebutton.isSelected = false
+            collegebutton.layer.shadowColor = UIColor.clear.cgColor
+
+//            collegebutton.layer.shadowColor = UIColor.black.cgColor
+//            collegebutton.layer.shadowOffset = CGSize(width: 5, height: 5)
+//            collegebutton.layer.shadowRadius = 5
+//            collegebutton.layer.shadowOpacity = 1.0
         }
         else {
             truthtable[0] = true
             collegebutton.isSelected = true
+            collegebutton.layer.shadowColor = UIColor.black.cgColor
+
         }
     }
     @IBAction func brutalclicked(_ sender: Any) {
         if truthtable[1] {
             truthtable[1] = false
             brutalbutton.isSelected = false
+            brutalbutton.layer.shadowColor = UIColor.clear.cgColor
+
         }
         else {
             truthtable[1] = true
             brutalbutton.isSelected = true
+            brutalbutton.layer.shadowColor = UIColor.black.cgColor
+
         }
     }
     @IBAction func coronaclicked(_ sender: Any) {
         if truthtable[2] {
             truthtable[2] = false
             coronabutton.isSelected = false
+            coronabutton.layer.shadowColor = UIColor.clear.cgColor
+
         }
         else {
             truthtable[2] = true
             coronabutton.isSelected = true
+            coronabutton.layer.shadowColor = UIColor.black.cgColor
+
         }
     }
     @IBAction func distanceclicked(_ sender: Any) {
         if irl {
             irl = false
             distancebutton.isSelected = false
+            distancebutton.layer.shadowColor = UIColor.clear.cgColor
+
         }
         else {
             irl = true
             distancebutton.isSelected = true
+            distancebutton.layer.shadowColor = UIColor.black.cgColor
+
         }
     }
     
