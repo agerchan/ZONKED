@@ -17,6 +17,7 @@
 		9506BDF824A66EDB004A0BBD /* ZOYAUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BDF724A66EDB004A0BBD /* ZOYAUITests.swift */; };
 		9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9506BE0524A66F0C004A0BBD /* GameController.swift */; };
 		9506BE0824A69DEC004A0BBD /* deck.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9506BE0724A69DEB004A0BBD /* deck.txt */; };
+		952BD96424B24B5A0090BD89 /* SecretController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952BD96324B24B5A0090BD89 /* SecretController.swift */; };
 		95D894A724AFE5A7008B0694 /* dirty.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D894A624AFE5A7008B0694 /* dirty.txt */; };
 		95D894A924AFE803008B0694 /* brutal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 95D894A824AFE803008B0694 /* brutal.txt */; };
 		95EB8D5524A6A9B90046BF01 /* ExtensionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */; };
@@ -86,6 +87,7 @@
 		9506BDF924A66EDB004A0BBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9506BE0524A66F0C004A0BBD /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		9506BE0724A69DEB004A0BBD /* deck.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = deck.txt; sourceTree = "<group>"; };
+		952BD96324B24B5A0090BD89 /* SecretController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecretController.swift; sourceTree = "<group>"; };
 		95D894A624AFE5A7008B0694 /* dirty.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dirty.txt; sourceTree = "<group>"; };
 		95D894A824AFE803008B0694 /* brutal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = brutal.txt; sourceTree = "<group>"; };
 		95EB8D5424A6A9B90046BF01 /* ExtensionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionController.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				9506BE0524A66F0C004A0BBD /* GameController.swift */,
 				95EB8D7024A7E3E10046BF01 /* GameOverController.swift */,
 				95EB8D7224A815DC0046BF01 /* HelpController.swift */,
+				952BD96324B24B5A0090BD89 /* SecretController.swift */,
 				9506BDDB24A66ED9004A0BBD /* Main.storyboard */,
 				9830CFA824A7DFBA00084098 /* paranoia.txt */,
 				95D894A824AFE803008B0694 /* brutal.txt */,
@@ -406,6 +409,7 @@
 				9506BDDA24A66ED9004A0BBD /* ViewController.swift in Sources */,
 				95EB8D7324A815DC0046BF01 /* HelpController.swift in Sources */,
 				95EB8D7124A7E3E10046BF01 /* GameOverController.swift in Sources */,
+				952BD96424B24B5A0090BD89 /* SecretController.swift in Sources */,
 				95EB8D5524A6A9B90046BF01 /* ExtensionController.swift in Sources */,
 				9506BE0624A66F0C004A0BBD /* GameController.swift in Sources */,
 				9506BDD624A66ED9004A0BBD /* AppDelegate.swift in Sources */,
