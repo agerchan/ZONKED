@@ -15,7 +15,7 @@ class GameController: UIViewController {
     //keeping track of which options correspond to which filenames
     var filth = 1
     //var clean = false
-    var irl = false
+    var irl = true
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false
@@ -92,7 +92,7 @@ class GameController: UIViewController {
         
         //if the current card is the paranoia card
         if newcard.count == 3 {
-            if newcard[2] == " paranoia"{
+            if newcard[2].contains("p"){
                 let image = UIImage(named: "OrangeNextP" )! as UIImage
                 nextcardbutton.setImage(image, for: .normal)
                 //nextcardbutton.setImage("paranoiaButton": UIImage?, for: .normal)

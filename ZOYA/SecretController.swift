@@ -14,6 +14,8 @@ class SecretController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
         textbox.text = "Gabriella Ardiles and Anna Gerchanovsky would like to thank our friends for helping us create this game. " +
             "Thank you Myles Winston, Brooke Gunter, Izzy Gloria, Neil Brydon for giving your input and opinions! " +
         "Special thanks to Izzy Gloria, for inpsiring the game, transcribing the cards, and promising to get the bug tattooed on her <3. " +

@@ -16,7 +16,7 @@ class ExtensionController: UIViewController {
     //var mild = false
     //var dirty = false
     var filth = 1
-    var irl = false
+    var irl = true
 
     
     var image = UIImage(named: "dot" )! as UIImage
@@ -124,14 +124,14 @@ class ExtensionController: UIViewController {
     @IBAction func distanceclicked(_ sender: Any) {
         if irl {
             irl = false
-            distancebutton.isSelected = false
-            distancebutton.layer.shadowColor = UIColor.clear.cgColor
+            distancebutton.isSelected = true
+            distancebutton.layer.shadowColor = UIColor.black.cgColor
 
         }
         else {
             irl = true
-            distancebutton.isSelected = true
-            distancebutton.layer.shadowColor = UIColor.black.cgColor
+            distancebutton.isSelected = false
+            distancebutton.layer.shadowColor = UIColor.clear.cgColor
 
         }
     }

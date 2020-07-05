@@ -1,5 +1,5 @@
 2: Who is most likely to end up in an unhappy marriage?
-3: Play a round of paranoia: paranoia
+3: Play a round of paranoia: p
 1: if you're wearing jeans
 1: if you have an allergy
 2: who will get married last
