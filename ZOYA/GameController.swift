@@ -15,7 +15,7 @@ class GameController: UIViewController {
     //keeping track of which options correspond to which filenames
     var filth = 1
     //var clean = false
-    var irl = true
+    var irl = false
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false

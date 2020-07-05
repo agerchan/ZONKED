@@ -16,7 +16,7 @@ class ExtensionController: UIViewController {
     //var mild = false
     //var dirty = false
     var filth = 1
-    var irl = true
+    var irl = false
 
     
     var image = UIImage(named: "dot" )! as UIImage
