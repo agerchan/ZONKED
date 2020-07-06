@@ -60,7 +60,7 @@
                                     <segue destination="Xy6-3a-rkM" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="sFQ-0E-hKy"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-ib-DDM">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="futuralogo" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-ib-DDM">
                                 <rect key="frame" x="25" y="119" width="364" height="200"/>
                             </imageView>
                         </subviews>
@@ -852,7 +852,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="DwD-uG-inH"/>
-        <segue reference="lUI-Oo-YKi"/>
+        <segue reference="nks-6t-a6K"/>
         <segue reference="dFh-rj-dyG"/>
         <segue reference="Jzq-oB-uNs"/>
     </inferredMetricsTieBreakers>
@@ -866,8 +866,8 @@
         <image name="bug!.png" width="960" height="720"/>
         <image name="buzzed bug.png" width="960" height="720"/>
         <image name="dot.png" width="10" height="10"/>
+        <image name="futuralogo" width="320" height="240"/>
         <image name="helpIcon.png" width="30" height="30"/>
-        <image name="logo" width="320" height="240"/>
         <image name="orange.png" width="160" height="154"/>
         <image name="pink.png" width="160" height="154"/>
         <image name="purple.png" width="160" height="154"/>
