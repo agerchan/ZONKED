@@ -54,6 +54,7 @@ class GameController: UIViewController {
     @IBOutlet weak var card: UILabel!
     @IBOutlet weak var exitbutton: UIButton!
     @IBOutlet weak var backbutton: UIButton!
+    @IBOutlet weak var icon: UIButton!
     
     //takes a filename, returns an array of cards
     func makeDeck(fname: String) -> Array<Array<String>> {
@@ -87,6 +88,7 @@ class GameController: UIViewController {
         card.textColor = colors[kind][1] as? UIColor
         nextcardbutton.setImage(image, for: .normal)
         exitbutton.setImage(image2, for: .normal)
+        if paranoiaMode == false { icon.setImage(UIImage(named: "spraybottle")! as UIImage, for: .normal) }
     
         //colors[kind][2]
         
@@ -104,7 +106,9 @@ class GameController: UIViewController {
         else if paranoiaMode {
             backbutton.isEnabled = true
             backbutton.isHidden = false
+            icon.setImage(UIImage(named: "coin")! as UIImage, for: .normal)
         }
+        
     }
     
     //gets a new card, based on what the mode is (used in viewDidLoad and nextcardpressed)
@@ -242,4 +246,12 @@ class GameController: UIViewController {
 
     }
    
+    @IBAction func coinflipped(_ sender: Any) {
+        if paranoiaMode {
+            let flip = Int.random(in: 0...1)
+            if flip == 0 {icon.setImage(UIImage(named: "heads")! as UIImage, for: .normal)}
+            else {icon.setImage(UIImage(named: "tails")! as UIImage, for: .normal)}
+        }
+    }
+    
 }
