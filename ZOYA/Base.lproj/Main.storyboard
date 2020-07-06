@@ -495,7 +495,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-Mo-T5M">
-                                <rect key="frame" x="280" y="63" width="109" height="45"/>
+                                <rect key="frame" x="171" y="40.5" width="218" height="90"/>
                                 <state key="normal" image="BlueExit.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -536,8 +536,8 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIZ-o7-oGP">
-                                <rect key="frame" x="280" y="826" width="109" height="45"/>
-                                <state key="normal" image="BlueExit.png">
+                                <rect key="frame" x="171" y="781" width="218" height="90"/>
+                                <state key="normal" image="PurpleExit.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -984,15 +984,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Lnn-8G-Ro7"/>
+        <segue reference="S03-Iv-oHs"/>
         <segue reference="nks-6t-a6K"/>
         <segue reference="dFh-rj-dyG"/>
-        <segue reference="CAS-oM-YsA"/>
+        <segue reference="Jzq-oB-uNs"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BlueExit.png" width="109" height="45"/>
         <image name="BlueNext.png" width="267" height="59"/>
         <image name="GoButton.png" width="77" height="76"/>
+        <image name="PurpleExit.png" width="109" height="45"/>
         <image name="RestartButton.png" width="259" height="51"/>
         <image name="Scale.png" width="253" height="4"/>
         <image name="StartButton.png" width="259" height="51"/>

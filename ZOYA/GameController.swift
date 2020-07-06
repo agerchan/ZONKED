@@ -34,7 +34,9 @@ class GameController: UIViewController {
                   
                   [ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white, "PurpleNext", "PurpleExit"]]
     
-    let labels = ["BUZ'D", "WHO", "MISC", "ToD", "paranoia"]
+    let labels = ["CENSUS", "WHO", "MISC", "ToD", "paranoia"]
+    let modeicons = ["book", "person", "yarn", "lips", "coin"]
+    
     
     //IMAGES FOR BUTTON SWITCH
     //let image = UIImage(named: "paranoiaButton")! as UIImage
@@ -82,13 +84,14 @@ class GameController: UIViewController {
         let kind = (Int(newcard[0]) ?? 4) - 1
         let image = UIImage(named: colors[kind][2] as! String )! as UIImage
         let image2 = UIImage(named: colors[kind][3] as! String )! as UIImage
+        icon.setImage(UIImage(named: modeicons[kind])! as UIImage, for: .normal)
         self.view.backgroundColor = colors[kind][0] as? UIColor
         category.textColor = colors[kind][1] as? UIColor
         category.text = labels[kind]
         card.textColor = colors[kind][1] as? UIColor
         nextcardbutton.setImage(image, for: .normal)
         exitbutton.setImage(image2, for: .normal)
-        if paranoiaMode == false { icon.setImage(UIImage(named: "spraybottle")! as UIImage, for: .normal) }
+        //if paranoiaMode == false { icon.setImage(UIImage(named: "spraybottle")! as UIImage, for: .normal) }
     
         //colors[kind][2]
         
