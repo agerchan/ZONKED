@@ -19,6 +19,7 @@ class GameController: UIViewController {
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false
+    var flipped = false
     
     var deck = [[String]]()
     var paranoiaDeck = [[String]]()
@@ -246,11 +247,13 @@ class GameController: UIViewController {
     @IBAction func nextcardpressed(_ sender: Any) {
         pickNewCard()
         generateCard(newcard: currentcard)
+        flipped = false
 
     }
    
     @IBAction func coinflipped(_ sender: Any) {
-        if paranoiaMode {
+        if currentcard[0] == "5" && flipped == false {
+            flipped = true
             let flip = Int.random(in: 0...1)
             if flip == 0 {icon.setImage(UIImage(named: "heads")! as UIImage, for: .normal)}
             else {icon.setImage(UIImage(named: "tails")! as UIImage, for: .normal)}
