@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,23 +13,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUZZED BUG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLc-QS-jd2">
-                                <rect key="frame" x="48" y="173" width="322" height="138"/>
+                                <rect key="frame" x="446" y="79" width="308" height="138"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="53"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUZZED BUG" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfA-v3-M42">
-                                <rect key="frame" x="44" y="169" width="322" height="138"/>
+                                <rect key="frame" x="442" y="75" width="308" height="138"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="53"/>
                                 <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="399-3e-fxU">
-                                <rect key="frame" x="77.5" y="736.5" width="259" height="51"/>
+                                <rect key="frame" x="468.5" y="288" width="259" height="51"/>
                                 <state key="normal" image="StartButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -38,7 +38,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gei-WN-E4S">
-                                <rect key="frame" x="25" y="69" width="30" height="33"/>
+                                <rect key="frame" x="69" y="25" width="30" height="33"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <state key="normal" image="helpIcon.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -48,11 +48,11 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bug!.png" translatesAutoresizingMaskIntoConstraints="NO" id="bx3-oB-vjA">
-                                <rect key="frame" x="-273" y="344" width="960" height="352"/>
+                                <rect key="frame" x="50" y="-153" width="427" height="720"/>
                                 <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Wx-XI-eRI">
-                                <rect key="frame" x="50" y="114" width="314" height="30"/>
+                                <rect key="frame" x="89" y="75" width="88" height="243"/>
                                 <state key="normal" title="secretbutton">
                                     <color key="titleColor" name="LightBlue"/>
                                 </state>
@@ -61,7 +61,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="futuralogo2" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-ib-DDM">
-                                <rect key="frame" x="25" y="119" width="364" height="200"/>
+                                <rect key="frame" x="438" y="50" width="320" height="193"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="LightBlue"/>
@@ -269,11 +269,11 @@
             <objects>
                 <viewController id="Crm-J4-mJC" customClass="ExtensionController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doT-Th-mR3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpq-cM-8hO">
-                                <rect key="frame" x="30" y="69" width="30" height="33"/>
+                                <rect key="frame" x="74" y="25" width="30" height="33"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <state key="normal" image="helpIcon.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -283,7 +283,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6T-zY-LzH">
-                                <rect key="frame" x="217" y="495" width="160" height="154"/>
+                                <rect key="frame" x="309" y="217" width="160" height="154"/>
                                 <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="pink.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -293,7 +293,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-TA-xnR">
-                                <rect key="frame" x="37" y="321" width="160" height="154"/>
+                                <rect key="frame" x="129" y="43" width="160" height="154"/>
                                 <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="orange.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -303,7 +303,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6tp-Ge-Cry">
-                                <rect key="frame" x="37" y="495" width="160" height="154"/>
+                                <rect key="frame" x="129" y="217" width="160" height="154"/>
                                 <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="yellow.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -313,7 +313,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-bI-1UH">
-                                <rect key="frame" x="217" y="321" width="160" height="154"/>
+                                <rect key="frame" x="309" y="43" width="160" height="154"/>
                                 <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="purple.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -323,10 +323,10 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scale.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-7q-RXL">
-                                <rect key="frame" x="80.5" y="242" width="253" height="4"/>
+                                <rect key="frame" x="544" y="142.5" width="253" height="4"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-HC-ek6">
-                                <rect key="frame" x="75.5" y="233" width="10" height="22"/>
+                                <rect key="frame" x="539" y="133.5" width="10" height="22"/>
                                 <color key="tintColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" image="dot.png">
                                     <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -336,52 +336,52 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIR-rA-Bre">
-                                <rect key="frame" x="202" y="233" width="10" height="22"/>
+                                <rect key="frame" x="665.5" y="133.5" width="10" height="22"/>
                                 <state key="normal" image="dot.png"/>
                                 <connections>
                                     <action selector="Mild:" destination="Crm-J4-mJC" eventType="touchUpInside" id="VJT-ty-YvJ"/>
                                 </connections>
                             </button>
                             <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sob-oG-jCT">
-                                <rect key="frame" x="328.5" y="233" width="10" height="22"/>
+                                <rect key="frame" x="792" y="133.5" width="10" height="22"/>
                                 <state key="normal" image="dot.png"/>
                                 <connections>
                                     <action selector="Dirty:" destination="Crm-J4-mJC" eventType="touchUpInside" id="BGM-sj-0Bu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="college" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0f-6y-jiq">
-                                <rect key="frame" x="77.5" y="382" width="79" height="32"/>
+                                <rect key="frame" x="169.5" y="104" width="79" height="32"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="brutal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fke-nK-klL">
-                                <rect key="frame" x="85" y="556" width="64" height="32"/>
+                                <rect key="frame" x="177" y="278" width="64" height="32"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kg9-vQ-DJ7">
-                                <rect key="frame" x="252" y="382" width="90" height="32"/>
+                                <rect key="frame" x="344" y="104" width="90" height="32"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spraybottle" translatesAutoresizingMaskIntoConstraints="NO" id="2xk-qg-xV3">
-                                <rect key="frame" x="55.5" y="169" width="50" height="50"/>
+                                <rect key="frame" x="519" y="69.5" width="50" height="50"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spraybottle" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-nE-G21">
-                                <rect key="frame" x="308.5" y="169" width="50" height="50"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trash" translatesAutoresizingMaskIntoConstraints="NO" id="zpC-nE-G21">
+                                <rect key="frame" x="772" y="69.5" width="50" height="50"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="corona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AM5-cF-DEh">
-                                <rect key="frame" x="258.5" y="556" width="77" height="32"/>
+                                <rect key="frame" x="350.5" y="278" width="77" height="32"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="24"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="31O-zm-TZa">
-                                <rect key="frame" x="168.5" y="724" width="77" height="76"/>
+                                <rect key="frame" x="632" y="256" width="77" height="76"/>
                                 <state key="normal" image="GoButton.png">
                                     <color key="titleColor" red="0.88368280440000002" green="0.5013634871" blue="0.45784429840000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -491,11 +491,11 @@
             <objects>
                 <viewController id="UTc-vp-2Yb" customClass="GameController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Az-K6-F8v">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-Mo-T5M">
-                                <rect key="frame" x="171" y="40.5" width="218" height="90"/>
+                                <rect key="frame" x="762" y="25" width="109" height="45"/>
                                 <state key="normal" image="BlueExit.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -504,13 +504,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="question" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jh6-JH-yJW">
-                                <rect key="frame" x="75" y="409" width="264" height="32.5"/>
+                                <rect key="frame" x="244" y="216" width="408" height="32.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuc-uj-YHH">
-                                <rect key="frame" x="73.5" y="732.5" width="267" height="59"/>
+                                <rect key="frame" x="314.5" y="309" width="267" height="59"/>
                                 <state key="normal" image="BlueNext.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -519,13 +519,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CATEGORY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QLf-hQ-PtS">
-                                <rect key="frame" x="63" y="194" width="288" height="65"/>
+                                <rect key="frame" x="304" y="50" width="288" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="017-Sf-gCe">
-                                <rect key="frame" x="25" y="69" width="30" height="33"/>
+                                <rect key="frame" x="69" y="25" width="30" height="33"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="25"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="helpIcon.png">
@@ -536,7 +536,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIZ-o7-oGP">
-                                <rect key="frame" x="171" y="781" width="218" height="90"/>
+                                <rect key="frame" x="762" y="344" width="109" height="45"/>
                                 <state key="normal" image="PurpleExit.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -545,7 +545,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Bf-Of-4fQ">
-                                <rect key="frame" x="182" y="309" width="50" height="50"/>
+                                <rect key="frame" x="423" y="135" width="50" height="50"/>
                                 <state key="normal" image="spraybottle"/>
                                 <connections>
                                     <action selector="coinflipped:" destination="UTc-vp-2Yb" eventType="touchUpInside" id="vaZ-0d-sXO"/>
@@ -566,11 +566,14 @@
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="FbB-Px-68S"/>
                             <constraint firstItem="xuc-uj-YHH" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="Jd3-hA-Ysj"/>
                             <constraint firstItem="j1V-PU-gQu" firstAttribute="trailing" secondItem="Jh6-JH-yJW" secondAttribute="trailing" constant="200" id="KoG-qf-4PK"/>
-                            <constraint firstItem="Jh6-JH-yJW" firstAttribute="centerY" secondItem="4Az-K6-F8v" secondAttribute="centerY" id="LHu-Ov-h64"/>
-                            <constraint firstAttribute="trailing" secondItem="1Bf-Of-4fQ" secondAttribute="trailing" constant="25" id="PVf-A5-LIb"/>
+                            <constraint firstItem="Jh6-JH-yJW" firstAttribute="centerY" secondItem="4Az-K6-F8v" secondAttribute="centerY" constant="25" id="LHu-Ov-h64"/>
+                            <constraint firstItem="1Bf-Of-4fQ" firstAttribute="bottom" secondItem="QLf-hQ-PtS" secondAttribute="bottom" constant="70" id="LbB-kk-S6c"/>
+                            <constraint firstItem="1Bf-Of-4fQ" firstAttribute="trailing" secondItem="j1V-PU-gQu" secondAttribute="centerX" constant="25" id="MHu-ia-ZUS"/>
+                            <constraint firstAttribute="centerX" secondItem="1Bf-Of-4fQ" secondAttribute="centerX" id="PVf-A5-LIb"/>
                             <constraint firstItem="QLf-hQ-PtS" firstAttribute="top" secondItem="j1V-PU-gQu" secondAttribute="top" constant="150" id="R47-Nf-0hh"/>
-                            <constraint firstItem="1Bf-Of-4fQ" firstAttribute="centerY" secondItem="4Az-K6-F8v" secondAttribute="centerY" id="Rue-oB-2Ix"/>
+                            <constraint firstItem="1Bf-Of-4fQ" firstAttribute="top" secondItem="QLf-hQ-PtS" secondAttribute="bottom" constant="20" id="Rue-oB-2Ix"/>
                             <constraint firstAttribute="trailing" secondItem="EIZ-o7-oGP" secondAttribute="trailing" constant="25" id="SMw-BL-7fM"/>
+                            <constraint firstItem="j1V-PU-gQu" firstAttribute="centerX" secondItem="1Bf-Of-4fQ" secondAttribute="leading" constant="25" id="VEt-3U-NEJ"/>
                             <constraint firstItem="017-Sf-gCe" firstAttribute="leading" secondItem="j1V-PU-gQu" secondAttribute="leading" constant="25" id="Va0-JB-4Mw"/>
                             <constraint firstAttribute="bottom" secondItem="EIZ-o7-oGP" secondAttribute="bottom" constant="25" id="WcM-dk-dgh"/>
                             <constraint firstItem="xuc-uj-YHH" firstAttribute="centerX" secondItem="4Az-K6-F8v" secondAttribute="centerX" id="XaN-AN-YMP"/>
@@ -593,7 +596,7 @@
                                 <exclude reference="7Ke-Xb-Bst"/>
                                 <exclude reference="DzH-gx-MxV"/>
                                 <exclude reference="KoG-qf-4PK"/>
-                                <exclude reference="fL9-3C-aLE"/>
+                                <exclude reference="VEt-3U-NEJ"/>
                                 <exclude reference="iA8-sG-Q7K"/>
                                 <exclude reference="qMi-XN-hlW"/>
                                 <exclude reference="tLl-jI-N7Z"/>
@@ -601,21 +604,24 @@
                                 <exclude reference="FbB-Px-68S"/>
                                 <exclude reference="R47-Nf-0hh"/>
                                 <exclude reference="s9m-uq-3GZ"/>
-                                <exclude reference="CGh-Ah-dca"/>
-                                <exclude reference="dem-1a-Nco"/>
-                                <exclude reference="fqm-2f-Vmy"/>
-                                <exclude reference="AWV-rf-ufq"/>
-                                <exclude reference="AdW-Lj-Crg"/>
-                                <exclude reference="DFY-BW-R4q"/>
-                                <exclude reference="PVf-A5-LIb"/>
-                                <exclude reference="Rue-oB-2Ix"/>
-                                <exclude reference="xvz-X2-30U"/>
                                 <exclude reference="A9a-rc-f2G"/>
                                 <exclude reference="LHu-Ov-h64"/>
+                                <exclude reference="LbB-kk-S6c"/>
                                 <exclude reference="YJJ-md-LBR"/>
                                 <exclude reference="geZ-n9-hsj"/>
                                 <exclude reference="Jd3-hA-Ysj"/>
                                 <exclude reference="XaN-AN-YMP"/>
+                                <exclude reference="AWV-rf-ufq"/>
+                                <exclude reference="AdW-Lj-Crg"/>
+                                <exclude reference="DFY-BW-R4q"/>
+                                <exclude reference="MHu-ia-ZUS"/>
+                                <exclude reference="PVf-A5-LIb"/>
+                                <exclude reference="Rue-oB-2Ix"/>
+                                <exclude reference="fL9-3C-aLE"/>
+                                <exclude reference="xvz-X2-30U"/>
+                                <exclude reference="CGh-Ah-dca"/>
+                                <exclude reference="dem-1a-Nco"/>
+                                <exclude reference="fqm-2f-Vmy"/>
                                 <exclude reference="SMw-BL-7fM"/>
                                 <exclude reference="WcM-dk-dgh"/>
                                 <exclude reference="cab-bT-3Gs"/>
@@ -624,16 +630,19 @@
                         <variation key="heightClass=compact">
                             <mask key="constraints">
                                 <include reference="KoG-qf-4PK"/>
+                                <include reference="VEt-3U-NEJ"/>
                                 <include reference="iA8-sG-Q7K"/>
                                 <include reference="0p9-WL-LOf"/>
                                 <include reference="s9m-uq-3GZ"/>
-                                <include reference="CGh-Ah-dca"/>
-                                <include reference="fqm-2f-Vmy"/>
-                                <include reference="PVf-A5-LIb"/>
-                                <include reference="Rue-oB-2Ix"/>
                                 <include reference="LHu-Ov-h64"/>
+                                <include reference="LbB-kk-S6c"/>
                                 <include reference="YJJ-md-LBR"/>
                                 <include reference="XaN-AN-YMP"/>
+                                <include reference="MHu-ia-ZUS"/>
+                                <include reference="PVf-A5-LIb"/>
+                                <include reference="Rue-oB-2Ix"/>
+                                <include reference="CGh-Ah-dca"/>
+                                <include reference="fqm-2f-Vmy"/>
                                 <include reference="SMw-BL-7fM"/>
                                 <include reference="cab-bT-3Gs"/>
                             </mask>
@@ -642,19 +651,19 @@
                             <mask key="constraints">
                                 <include reference="7Ke-Xb-Bst"/>
                                 <include reference="DzH-gx-MxV"/>
-                                <include reference="fL9-3C-aLE"/>
                                 <include reference="qMi-XN-hlW"/>
                                 <include reference="tLl-jI-N7Z"/>
                                 <include reference="FbB-Px-68S"/>
                                 <include reference="R47-Nf-0hh"/>
-                                <include reference="dem-1a-Nco"/>
-                                <include reference="AWV-rf-ufq"/>
-                                <include reference="AdW-Lj-Crg"/>
-                                <include reference="DFY-BW-R4q"/>
-                                <include reference="xvz-X2-30U"/>
                                 <include reference="A9a-rc-f2G"/>
                                 <include reference="geZ-n9-hsj"/>
                                 <include reference="Jd3-hA-Ysj"/>
+                                <include reference="AWV-rf-ufq"/>
+                                <include reference="AdW-Lj-Crg"/>
+                                <include reference="DFY-BW-R4q"/>
+                                <include reference="fL9-3C-aLE"/>
+                                <include reference="xvz-X2-30U"/>
+                                <include reference="dem-1a-Nco"/>
                                 <include reference="WcM-dk-dgh"/>
                             </mask>
                         </variation>
@@ -680,17 +689,17 @@
             <objects>
                 <viewController id="Csz-py-LCu" customClass="HelpController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6jt-PB-cMy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="no help for u haha" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
-                                <rect key="frame" x="50" y="94" width="314" height="22.5"/>
+                                <rect key="frame" x="94" y="50" width="708" height="22.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htb-gA-A3i">
-                                <rect key="frame" x="181.5" y="777" width="51" height="35"/>
+                                <rect key="frame" x="422.5" y="308" width="51" height="35"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
                                 <state key="normal" title="BACK">
                                     <color key="titleColor" red="0.41972739320000002" green="0.65090673580000002" blue="0.4410572848" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -725,23 +734,23 @@
             <objects>
                 <viewController id="JZh-Sz-iDM" customClass="GameOverController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EXE-y2-9pL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UbJ-bl-C5F">
-                                <rect key="frame" x="45" y="198" width="328" height="65"/>
+                                <rect key="frame" x="446" y="79" width="308" height="130"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                 <color key="textColor" name="Blue"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-xW-VMv">
-                                <rect key="frame" x="41" y="194" width="328" height="65"/>
+                                <rect key="frame" x="442" y="75" width="308" height="130"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wVu-he-fih">
-                                <rect key="frame" x="77.5" y="736.5" width="259" height="51"/>
+                                <rect key="frame" x="468.5" y="263" width="259" height="51"/>
                                 <state key="normal" image="RestartButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -750,7 +759,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="buzzed bug.png" translatesAutoresizingMaskIntoConstraints="NO" id="020-0N-bh1">
-                                <rect key="frame" x="-273" y="319" width="960" height="377"/>
+                                <rect key="frame" x="50" y="-153" width="427" height="720"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" name="Green"/>
@@ -892,11 +901,11 @@
             <objects>
                 <viewController id="Xy6-3a-rkM" customClass="SecretController" customModule="ZOYA" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ru-TN-U8D">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EzM-zn-GKn">
-                                <rect key="frame" x="189" y="732" width="36" height="30"/>
+                                <rect key="frame" x="766" y="192" width="36" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="back">
                                     <color key="titleColor" name="Blue"/>
@@ -906,13 +915,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i7v-zO-pFH">
-                                <rect key="frame" x="75" y="144" width="264" height="20.5"/>
+                                <rect key="frame" x="119" y="75" width="533" height="243"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3D-EP-Bq8">
-                                <rect key="frame" x="171" y="797" width="168" height="30"/>
+                                <rect key="frame" x="609" y="257" width="168" height="101"/>
                                 <state key="normal" title="even more secret button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1006,6 +1015,7 @@
         <image name="pink.png" width="160" height="154"/>
         <image name="purple.png" width="160" height="154"/>
         <image name="spraybottle" width="50" height="50"/>
+        <image name="trash" width="50" height="50"/>
         <image name="yellow.png" width="160" height="154"/>
         <namedColor name="Blue">
             <color red="0.016000000759959221" green="0.28999999165534973" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
