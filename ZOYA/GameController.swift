@@ -25,15 +25,15 @@ class GameController: UIViewController {
     var paranoiaDeck = [[String]]()
     //initializing decks
     
-    let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white, "PinkNext", "PinkExit"],
+    let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white, "PinkNextButton", "PinkExitButton"],
                   
-                  [UIColor.init(displayP3Red: 0.51, green: 0.22, blue: 0.93, alpha: 1), UIColor.white, "BlueNext", "BlueExit"],
+                  [UIColor.init(displayP3Red: 0.51, green: 0.22, blue: 0.93, alpha: 1), UIColor.white, "BlueNextButton", "BlueExitButton"],
                   
-                  [UIColor.init(displayP3Red: 0.23, green: 0.53, blue: 1, alpha: 1), UIColor.white, "OrangeNext", "OrangeExit"],
+                  [UIColor.init(displayP3Red: 0.23, green: 0.53, blue: 1, alpha: 1), UIColor.white, "OrangeNextButton", "OrangeExitButton"],
                   
-                  [UIColor.init(displayP3Red: 1, green: 0, blue: 0.43, alpha: 1), UIColor.white, "YellowNext", "YellowExit"],
+                  [UIColor.init(displayP3Red: 1, green: 0, blue: 0.43, alpha: 1), UIColor.white, "YellowNextButton", "YellowExitButton"],
                   
-                  [ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white, "PurpleNext", "PurpleExit"]]
+                  [ UIColor.init(displayP3Red: 0.98, green: 0.34, blue: 0.03, alpha: 1), UIColor.white, "PurpleNextButton", "PurpleExitButton"]]
     
     let labels = ["CENSUS", "WHO", "MISC", "ToD", "paranoia"]
     let modeicons = ["book", "person", "yarn", "lips", "coin"]
@@ -99,7 +99,7 @@ class GameController: UIViewController {
         //if the current card is the paranoia card
         if newcard.count == 3 {
             if newcard[2].contains("p"){
-                let image = UIImage(named: "OrangeNextP" )! as UIImage
+                let image = UIImage(named: "ParanoiaButton" )! as UIImage
                 nextcardbutton.setImage(image, for: .normal)
                 //nextcardbutton.setImage("paranoiaButton": UIImage?, for: .normal)
                 //nextcardbutton.setTitle("begin paranoia", for: .normal)

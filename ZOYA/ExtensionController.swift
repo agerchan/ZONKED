@@ -19,7 +19,8 @@ class ExtensionController: UIViewController {
     var irl = true
 
     
-    var image = UIImage(named: "dot" )! as UIImage
+    //var image = UIImage(named: "dot" )! as UIImage
+
     
     @IBOutlet weak var cleanbutton: UIButton!
     @IBOutlet weak var mildbutton: UIButton!
@@ -33,8 +34,9 @@ class ExtensionController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mildbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+        mildbutton.setImage(UIImage(named: "GreenDot" )! as UIImage, for: .normal)
         
+    
         //making buttons have shadows when selected (temporary)
         collegebutton.layer.shadowColor = UIColor.clear.cgColor
         //collegebutton.setTitleShadowColor(UIColor.clear, for: .selected)
@@ -56,6 +58,7 @@ class ExtensionController: UIViewController {
         distancebutton.layer.shadowOffset = CGSize(width: 5, height: 5)
         distancebutton.layer.shadowRadius = 5
         distancebutton.layer.shadowOpacity = 1.0
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -79,7 +82,8 @@ class ExtensionController: UIViewController {
         if truthtable[0] {
             truthtable[0] = false
             collegebutton.isSelected = false
-            collegebutton.layer.shadowColor = UIColor.clear.cgColor
+            //collegebutton.layer.shadowColor = UIColor.clear.cgColor
+            collegebutton.setImage(UIImage(named: "orange" )! as UIImage, for: .normal)
 
 //            collegebutton.layer.shadowColor = UIColor.black.cgColor
 //            collegebutton.layer.shadowOffset = CGSize(width: 5, height: 5)
@@ -89,7 +93,8 @@ class ExtensionController: UIViewController {
         else {
             truthtable[0] = true
             collegebutton.isSelected = true
-            collegebutton.layer.shadowColor = UIColor.black.cgColor
+            collegebutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
+            //collegebutton.layer.shadowColor = UIColor.black.cgColor
 
         }
     }
@@ -97,13 +102,15 @@ class ExtensionController: UIViewController {
         if truthtable[1] {
             truthtable[1] = false
             brutalbutton.isSelected = false
-            brutalbutton.layer.shadowColor = UIColor.clear.cgColor
+            brutalbutton.setImage(UIImage(named: "yellow" )! as UIImage, for: .normal)
+            //brutalbutton.layer.shadowColor = UIColor.clear.cgColor
 
         }
         else {
             truthtable[1] = true
             brutalbutton.isSelected = true
-            brutalbutton.layer.shadowColor = UIColor.black.cgColor
+            brutalbutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
+            //brutalbutton.layer.shadowColor = UIColor.black.cgColor
 
         }
     }
@@ -111,13 +118,15 @@ class ExtensionController: UIViewController {
         if truthtable[2] {
             truthtable[2] = false
             coronabutton.isSelected = false
-            coronabutton.layer.shadowColor = UIColor.clear.cgColor
+            coronabutton.setImage(UIImage(named: "pink" )! as UIImage, for: .normal)
+            //coronabutton.layer.shadowColor = UIColor.clear.cgColor
 
         }
         else {
             truthtable[2] = true
             coronabutton.isSelected = true
-            coronabutton.layer.shadowColor = UIColor.black.cgColor
+            coronabutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
+            //coronabutton.layer.shadowColor = UIColor.black.cgColor
 
         }
     }
@@ -125,20 +134,23 @@ class ExtensionController: UIViewController {
         if irl {
             irl = false
             distancebutton.isSelected = true
-            distancebutton.layer.shadowColor = UIColor.black.cgColor
+            distancebutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
+            //distancebutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
+            //distancebutton.layer.shadowColor = UIColor.black.cgColor
 
         }
         else {
             irl = true
             distancebutton.isSelected = false
-            distancebutton.layer.shadowColor = UIColor.clear.cgColor
+            distancebutton.setImage(UIImage(named: "purple" )! as UIImage, for: .normal)
+            //distancebutton.layer.shadowColor = UIColor.clear.cgColor
 
         }
     }
     
     @IBAction func cleanclicked(_ sender: Any) {
         if filth != 0 {
-            cleanbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            cleanbutton.setImage(UIImage(named: "GreenDot" )! as UIImage, for: .normal)
             mildbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
             dirtybutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
             filth = 0
@@ -164,7 +176,7 @@ class ExtensionController: UIViewController {
     @IBAction func Mild(_ sender: Any) {
         if filth != 1 {
             cleanbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
-            mildbutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            mildbutton.setImage(UIImage(named: "GreenDot" )! as UIImage, for: .normal)
             dirtybutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
             filth = 1
             //clean = false
@@ -188,7 +200,7 @@ class ExtensionController: UIViewController {
         if filth != 2 {
             cleanbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
             mildbutton.setImage(UIImage(named: "dot" )! as UIImage, for: .normal)
-            dirtybutton.setImage(UIImage(named: "greenDot" )! as UIImage, for: .normal)
+            dirtybutton.setImage(UIImage(named: "GreenDot" )! as UIImage, for: .normal)
             filth = 2
             //clean = true
         }
