@@ -11,7 +11,7 @@ import UIKit
 class GameController: UIViewController {
     
     var truthtable = [false]
-    var labletable = ["college", "brutal", "corona"]
+    var labletable = ["college", "brutal", "corona", "us"]
     //keeping track of which options correspond to which filenames
     var filth = 1
     //var clean = false
