@@ -1,5 +1,20 @@
-2: Who hates college the most?
-3: Go in a circle listing professors until someone can't anymore
-1: If you have over a 3.5 gpa
-1: If you're a TA
-4: email a TA "u up?": x
+2: hates college the most?
+1: if you’re a TA
+1: if you have over a 3.5 gpa
+1: if you’ve been sexiled: x
+1: if you’ve made out with an art student: x
+2: has slept most in other people’s dorms?
+2: is most likely to get their stomach pumped?
+1: ¬ if you don’t know this symbol
+3: read a robert frost poem. whoever laughs drinks
+4: email a ta “u up?”: x
+2: is most likely to get the cops called for throwing a dorm party?
+2: is most likely to switch their major?
+2: most likely to move in with their parents?
+1: person with the highest gpa
+2: most likely to be in greek life?
+1: if you’ve had a four loco
+1: if you’ve sexiled someone: x
+1: if you’ve had your stomach pumped
+1: if you’ve lied about your major
+1: if you’re living in a single dorm

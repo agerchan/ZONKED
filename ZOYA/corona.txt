@@ -1,4 +1,4 @@
-1: If you don't own a cloth mask
-2: Who is most likely to get corona?
-2: Who is most likely to cure corona?
-4: What's the dumbest thing you broke quarantine for?
+2: is most likely to get coronavirus?
+2: is most likely to cure coronavirus?
+4: what’s the dumbest thing you’ve broken quarantine for?
+1: if you don’t own a cloth mask
