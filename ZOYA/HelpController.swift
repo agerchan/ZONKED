@@ -20,7 +20,7 @@ class HelpController: UIViewController {
     var irl = true
     var paranoiaMode = false
     var deck = [[String]]()
-    var paranoiaDeck = [[String]]()
+    //var paranoiaDeck = [[String]]()
     var currentcard = ["1", "no"]
     var exitbutton: UIButton!
     var backbutton: UIButton!
@@ -39,7 +39,7 @@ class HelpController: UIViewController {
             game.truthtable = truthtable
             game.paranoiaMode = paranoiaMode
             game.deck = deck
-            game.paranoiaDeck = paranoiaDeck
+            //game.paranoiaDeck = paranoiaDeck
             game.waspaused = true
             game.currentcard = currentcard
             game.exitbutton = exitbutton

@@ -825,13 +825,13 @@
                                 <exclude reference="iA8-sG-Q7K"/>
                                 <exclude reference="qMi-XN-hlW"/>
                                 <exclude reference="tLl-jI-N7Z"/>
+                                <exclude reference="CGh-Ah-dca"/>
+                                <exclude reference="dem-1a-Nco"/>
+                                <exclude reference="fqm-2f-Vmy"/>
                                 <exclude reference="0p9-WL-LOf"/>
                                 <exclude reference="FbB-Px-68S"/>
                                 <exclude reference="R47-Nf-0hh"/>
                                 <exclude reference="s9m-uq-3GZ"/>
-                                <exclude reference="CGh-Ah-dca"/>
-                                <exclude reference="dem-1a-Nco"/>
-                                <exclude reference="fqm-2f-Vmy"/>
                                 <exclude reference="AWV-rf-ufq"/>
                                 <exclude reference="AdW-Lj-Crg"/>
                                 <exclude reference="DFY-BW-R4q"/>
@@ -857,10 +857,10 @@
                                 <include reference="KoG-qf-4PK"/>
                                 <include reference="VEt-3U-NEJ"/>
                                 <include reference="iA8-sG-Q7K"/>
-                                <include reference="0p9-WL-LOf"/>
-                                <include reference="s9m-uq-3GZ"/>
                                 <include reference="CGh-Ah-dca"/>
                                 <include reference="fqm-2f-Vmy"/>
+                                <include reference="0p9-WL-LOf"/>
+                                <include reference="s9m-uq-3GZ"/>
                                 <include reference="LbB-kk-S6c"/>
                                 <include reference="MHu-ia-ZUS"/>
                                 <include reference="PVf-A5-LIb"/>
@@ -878,9 +878,9 @@
                                 <include reference="DzH-gx-MxV"/>
                                 <include reference="qMi-XN-hlW"/>
                                 <include reference="tLl-jI-N7Z"/>
+                                <include reference="dem-1a-Nco"/>
                                 <include reference="FbB-Px-68S"/>
                                 <include reference="R47-Nf-0hh"/>
-                                <include reference="dem-1a-Nco"/>
                                 <include reference="AWV-rf-ufq"/>
                                 <include reference="AdW-Lj-Crg"/>
                                 <include reference="DFY-BW-R4q"/>
@@ -1219,7 +1219,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DwD-uG-inH"/>
+        <segue reference="Lnn-8G-Ro7"/>
         <segue reference="nks-6t-a6K"/>
         <segue reference="dFh-rj-dyG"/>
         <segue reference="jW2-Up-hJy"/>

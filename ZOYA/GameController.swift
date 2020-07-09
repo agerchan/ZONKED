@@ -19,10 +19,11 @@ class GameController: UIViewController {
     var waspaused = false
     //to keep track if the game just began or if returning from the help page
     var paranoiaMode = false
+    var whosleft = 0
     var flipped = false
     
     var deck = [[String]]()
-    var paranoiaDeck = [[String]]()
+    //var paranoiaDeck = [[String]]()
     //initializing decks
     
     let colors = [[UIColor.init(displayP3Red: 1, green: 0.84, blue: 0.04, alpha: 1), UIColor.white, "PinkNextButton", "PinkExitButton"],
@@ -72,8 +73,11 @@ class GameController: UIViewController {
                let lines = readStringProject.components(separatedBy: "\n")
                var attribute = [[String]]()
                for item in lines {
-                   //print(item.components(separatedBy: ":"))
-                   attribute.append(item.components(separatedBy: ":"))
+                //if item[0] == "2" { whosleft += 1}
+                let newitem = item.components(separatedBy: ":")
+                if newitem[0] == "2" { whosleft += 1}
+                attribute.append(newitem)
+                //attribute.append(item.components(separatedBy: ":"))
                }
                attribute.remove(at: attribute.count-1)
         return attribute
@@ -82,7 +86,9 @@ class GameController: UIViewController {
     //takes a card, and adjusts the interface accordingly
     func generateCard(newcard: [String]){
         card.text = newcard[1]
-        let kind = (Int(newcard[0]) ?? 4) - 1
+        var kind = 0
+        if paranoiaMode { kind = 4 }
+        else { kind = (Int(newcard[0]) ?? 4) - 1 }
         let image = UIImage(named: colors[kind][2] as! String )! as UIImage
         let image2 = UIImage(named: colors[kind][3] as! String )! as UIImage
         icon.setImage(UIImage(named: modeicons[kind])! as UIImage, for: .normal)
@@ -118,19 +124,36 @@ class GameController: UIViewController {
     //gets a new card, based on what the mode is (used in viewDidLoad and nextcardpressed)
     func pickNewCard(){
         if paranoiaMode == true {
-            let index = Int.random(in: 0...(paranoiaDeck.count-1))
-            currentcard = paranoiaDeck[index]
-            paranoiaDeck.remove(at: index)
-            //making sure you can leave paranoia mode
-            
-            
-            //nextcardbutton.setImage(image2, for: .normal)
-            
-            
-            //nextcardbutton.setTitle("next card", for: .normal)
-            if paranoiaDeck.count == 0 {
+            if whosleft == 0 {
                 paranoiaMode = false
+                backbutton.isEnabled = false
+                backbutton.isHidden = true
+                pickNewCard()
             }
+            else {
+                var card = ["0", "0", "0"]
+                var index = 0
+                while card[0] != "2" {
+                    index = Int.random(in: 0...(deck.count-1))
+                    card = deck[index]
+                }
+                currentcard = card
+                deck.remove(at: index)
+                whosleft -= 1
+            }
+//            let index = Int.random(in: 0...(paranoiaDeck.count-1))
+//            currentcard = paranoiaDeck[index]
+//            paranoiaDeck.remove(at: index)
+//            //making sure you can leave paranoia mode
+//
+//
+//            //nextcardbutton.setImage(image2, for: .normal)
+//
+//
+//            //nextcardbutton.setTitle("next card", for: .normal)
+//            if paranoiaDeck.count == 0 {
+//                paranoiaMode = false
+//            }
         }
         //if there are no cards left, go to game over screen
         else if deck.count == 0 {
@@ -140,11 +163,15 @@ class GameController: UIViewController {
         else {
             let index = Int.random(in: 0...(deck.count-1))
             currentcard = deck[index]
+            if currentcard[0] == "2" { whosleft -= 1}
             deck.remove(at: index)
             //if we ran out of paranoia cards and returned without pressing back
-            if paranoiaDeck.count == 0 {
-                backbutton.isEnabled = false
-                backbutton.isHidden = true
+//            if paranoiaDeck.count == 0 {
+//                backbutton.isEnabled = false
+//                backbutton.isHidden = true
+//            }
+            if currentcard.count == 3 && currentcard[2].contains("p") && whosleft == 0 {
+                pickNewCard()
             }
         }
     }
@@ -157,7 +184,7 @@ class GameController: UIViewController {
         if waspaused == false {
             //generating the decks
             deck += makeDeck(fname: "deck")
-            paranoiaDeck += makeDeck(fname: "paranoia")
+            //paranoiaDeck += makeDeck(fname: "paranoia")
             //adding extension packs
             for i in 1...truthtable.count {
                 let ex = truthtable[i-1]
@@ -175,12 +202,12 @@ class GameController: UIViewController {
                     if deck[i].count == 3 && deck[i][2].contains("x") { deck.remove(at: i) }
                     else { i += 1 }
                 }
-                var j = 0
-                while j < paranoiaDeck.count {
-                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("x") { paranoiaDeck.remove(at: j) }
-                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
-                    else { j += 1 }
-                }
+                //var j = 0
+//                while j < paranoiaDeck.count {
+//                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("x") { paranoiaDeck.remove(at: j) }
+//                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
+//                    else { j += 1 }
+//                }
             }
             if (irl == false) {
                 //remove irl cards
@@ -190,12 +217,12 @@ class GameController: UIViewController {
                     if deck[i].count == 3 && deck[i][2].contains("i") { deck.remove(at: i) }
                     else { i += 1 }
                 }
-                var j = 0
-                while j < paranoiaDeck.count {
-                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("i") { paranoiaDeck.remove(at: j) }
-                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
-                    else { j += 1 }
-                }
+//                var j = 0
+//                while j < paranoiaDeck.count {
+//                    if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2].contains("i") { paranoiaDeck.remove(at: j) }
+//                    //if paranoiaDeck[j].count == 3 && paranoiaDeck[j][2] == " x" { paranoiaDeck.remove(at: j) }
+//                    else { j += 1 }
+//                }
             }
             pickNewCard()
         }
@@ -211,7 +238,7 @@ class GameController: UIViewController {
             help.truthtable = truthtable
             help.paranoiaMode = paranoiaMode
             help.deck = deck
-            help.paranoiaDeck = paranoiaDeck
+            //help.paranoiaDeck = paranoiaDeck
             help.currentcard = currentcard
             help.exitbutton = exitbutton
             help.backbutton = backbutton
@@ -252,7 +279,7 @@ class GameController: UIViewController {
     }
    
     @IBAction func coinflipped(_ sender: Any) {
-        if currentcard[0] == "5" && flipped == false {
+        if currentcard[0] == "2" && paranoiaMode && flipped == false {
             flipped = true
             let flip = Int.random(in: 0...1)
             if flip == 0 {icon.setImage(UIImage(named: "heads")! as UIImage, for: .normal)}
