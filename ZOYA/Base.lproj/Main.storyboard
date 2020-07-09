@@ -335,7 +335,7 @@
                                     <action selector="coronaclicked:" destination="Crm-J4-mJC" eventType="touchUpInside" id="o5D-1j-00E"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenScale" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-7q-RXL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueScale" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-7q-RXL">
                                 <rect key="frame" x="85" y="167" width="244" height="4"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-HC-ek6">
@@ -720,7 +720,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-Mo-T5M">
-                                <rect key="frame" x="171" y="43" width="218" height="90"/>
+                                <rect key="frame" x="280" y="65.5" width="109" height="45"/>
                                 <state key="normal" image="BlueExitButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -761,7 +761,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIZ-o7-oGP">
-                                <rect key="frame" x="171" y="781" width="218" height="90"/>
+                                <rect key="frame" x="280" y="826" width="109" height="45"/>
                                 <state key="normal" image="PurpleBackButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -1227,8 +1227,8 @@
     <resources>
         <image name="BlueExitButton" width="109" height="45"/>
         <image name="BlueNextButton" width="267" height="59"/>
+        <image name="BlueScale" width="253" height="4"/>
         <image name="GoButton" width="85" height="84"/>
-        <image name="GreenScale" width="253" height="4"/>
         <image name="HelpIcon" width="38" height="38"/>
         <image name="PurpleBackButton" width="109" height="45"/>
         <image name="RestartButton" width="267" height="59"/>
