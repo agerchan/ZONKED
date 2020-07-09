@@ -14,7 +14,7 @@
 2: is most likely to cry tonight?
 1: if your bed is made right now
 2: is going to be the next person to crack their phone screen?
-3: play a round of paranoia: p
+3: play a round of paranoia: pi
 4: tell your most embarrassing drunk story
 2: is most likely to be an alcoholic?
 1: if you’re over 5’7
@@ -81,7 +81,7 @@
 3: quick! pair up with another person. last pair to get into piggyback position drinks: i
 2: is most likely to be president of their gsa?
 1: if you’ve been in a relationship, drink. twice
-3: (don’t read this out loud) play nose goes
+3: (don’t read this out loud) play nose goes: i
 2: is the main character?
 2: is most likely to go into porn?: x
 3: how old were you when you lost your virginity. oldest and youngest drink: x
