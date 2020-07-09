@@ -335,7 +335,7 @@
                                     <action selector="coronaclicked:" destination="Crm-J4-mJC" eventType="touchUpInside" id="o5D-1j-00E"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Scale" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-7q-RXL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenScale" translatesAutoresizingMaskIntoConstraints="NO" id="Vz3-7q-RXL">
                                 <rect key="frame" x="85" y="167" width="244" height="4"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D7u-HC-ek6">
@@ -1219,7 +1219,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DwD-uG-inH"/>
+        <segue reference="Lnn-8G-Ro7"/>
         <segue reference="nks-6t-a6K"/>
         <segue reference="dFh-rj-dyG"/>
         <segue reference="jW2-Up-hJy"/>
@@ -1228,10 +1228,10 @@
         <image name="BlueExitButton" width="109" height="45"/>
         <image name="BlueNextButton" width="267" height="59"/>
         <image name="GoButton" width="85" height="84"/>
+        <image name="GreenScale" width="253" height="4"/>
         <image name="HelpIcon" width="38" height="38"/>
         <image name="PurpleBackButton" width="109" height="45"/>
         <image name="RestartButton" width="267" height="59"/>
-        <image name="Scale" width="253" height="4"/>
         <image name="StartButton" width="263" height="57"/>
         <image name="bug!.png" width="960" height="720"/>
         <image name="buzzed bug.png" width="960" height="720"/>
