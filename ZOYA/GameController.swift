@@ -199,7 +199,10 @@ class GameController: UIViewController {
                 var i = 0
                 while i < deck.count {
                     //if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
-                    if deck[i].count == 3 && deck[i][2].contains("x") { deck.remove(at: i) }
+                    if deck[i].count == 3 && deck[i][2].contains("x") {
+                        if deck[i][0] == "2" { whosleft -= 1}
+                        deck.remove(at: i)
+                    }
                     else { i += 1 }
                 }
                 //var j = 0
@@ -214,7 +217,10 @@ class GameController: UIViewController {
                 var i = 0
                 while i < deck.count {
                     //if deck[i].count == 3 && deck[i][2] == " x" { deck.remove(at: i) }
-                    if deck[i].count == 3 && deck[i][2].contains("i") { deck.remove(at: i) }
+                    if deck[i].count == 3 && deck[i][2].contains("i") {
+                        if deck[i][0] == "2" { whosleft -= 1}
+                        deck.remove(at: i)
+                    }
                     else { i += 1 }
                 }
 //                var j = 0
