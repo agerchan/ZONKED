@@ -1,4 +1,16 @@
-5: Who is most likely to end up in an unhappy marriage?
-5: who will get married last
-5: who is least athletic
-5: who is the least attractive
+5: who is most likely to kill for money?
+5: who is most likely to assault a cop?
+5: who would you ask to help you hide a body?
+5: who would you ask to bail you out?
+5: who would you trust with a secret the most?
+5: who would you trust with a secret the least?
+5: who do you think would be the best rapper?
+5: who is most likely to cheat?
+5: who would be the best ex?
+5: who is the most sexist?
+5: who would you most like to be friends with benefits with?: x
+5: who is most likely to never have orgasmed?: x
+5: what two people would you want to have a threesome with?: x
+5: who is most likely to have an std?: x
+5: which two people are most likely to make everybody else in the room uncomfortable?
+5: who is most likely to send streaks when they are in their 20s?: x

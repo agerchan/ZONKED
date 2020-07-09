@@ -20,7 +20,10 @@ class ExtensionController: UIViewController {
 
     
     //var image = UIImage(named: "dot" )! as UIImage
-
+    
+    
+    @IBOutlet weak var spray: UIImageView!
+    
     
     @IBOutlet weak var cleanbutton: UIButton!
     @IBOutlet weak var mildbutton: UIButton!
@@ -35,9 +38,11 @@ class ExtensionController: UIViewController {
     func secretdeck() {
         if truthtable[3] {
             truthtable[3] = false
+            spray.image = UIImage(named: "spraybottle" )
         }
         else {
             truthtable[3] = true
+            spray.image = UIImage(named: "spray" )
         }
     }
     
