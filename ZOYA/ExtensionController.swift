@@ -102,6 +102,7 @@ class ExtensionController: UIViewController {
             collegebutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
         }
     }
+    
     @IBAction func brutalclicked(_ sender: Any) {
         if truthtable[1] {
             truthtable[1] = false

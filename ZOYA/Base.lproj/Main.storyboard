@@ -655,7 +655,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="71x-Mo-T5M">
-                                <rect key="frame" x="171" y="43" width="218" height="90"/>
+                                <rect key="frame" x="280" y="65.5" width="109" height="45"/>
                                 <state key="normal" image="BlueExitButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -696,7 +696,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EIZ-o7-oGP">
-                                <rect key="frame" x="171" y="781" width="218" height="90"/>
+                                <rect key="frame" x="280" y="826" width="109" height="45"/>
                                 <state key="normal" image="PurpleBackButton">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -864,30 +864,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rules" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
-                                <rect key="frame" x="25" y="94" width="364" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
+                                <rect key="frame" x="25" y="94" width="364" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htb-gA-A3i">
-                                <rect key="frame" x="181.5" y="777" width="51" height="35"/>
-                                <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="17"/>
-                                <state key="normal" title="BACK">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htb-gA-A3i">
+                                <rect key="frame" x="280" y="69" width="109" height="45"/>
+                                <state key="normal" image="BrightOrangeBack">
                                     <color key="titleColor" name="Green"/>
                                 </state>
                                 <connections>
                                     <action selector="backpressed:" destination="Csz-py-LCu" eventType="touchUpInside" id="aEF-2a-l8f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zat-71-6c6">
+                                <rect key="frame" x="0.0" y="0.0" width="95" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gameSetupTab"/>
+                                <connections>
+                                    <action selector="gameSetup:" destination="Csz-py-LCu" eventType="touchUpInside" id="zNx-HO-Rp8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-Fc-5Qt">
+                                <rect key="frame" x="0.0" y="222" width="95" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gameRulesTab"/>
+                                <connections>
+                                    <action selector="gameRules:" destination="Csz-py-LCu" eventType="touchUpInside" id="Kyw-4n-n3F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDI-oF-p30">
+                                <rect key="frame" x="0.0" y="445" width="95" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="disclamirTab"/>
+                                <connections>
+                                    <action selector="disclamir:" destination="Csz-py-LCu" eventType="touchUpInside" id="6aG-Ax-idO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sGx-di-MbI">
+                                <rect key="frame" x="0.0" y="667" width="95" height="224"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="memoTab"/>
+                                <connections>
+                                    <action selector="memo:" destination="Csz-py-LCu" eventType="touchUpInside" id="ks7-IL-ytL"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="1" green="0.74509803921568629" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="orq-cP-gie" firstAttribute="top" secondItem="3f4-wS-Fp4" secondAttribute="top" constant="50" id="0hp-Ys-z8P"/>
-                            <constraint firstItem="3f4-wS-Fp4" firstAttribute="bottom" secondItem="htb-gA-A3i" secondAttribute="bottom" constant="50" id="8IU-tf-LB6"/>
+                            <constraint firstItem="htb-gA-A3i" firstAttribute="top" secondItem="3f4-wS-Fp4" secondAttribute="top" constant="25" id="Cdi-0r-k4Y"/>
                             <constraint firstItem="3f4-wS-Fp4" firstAttribute="trailing" secondItem="orq-cP-gie" secondAttribute="trailing" constant="25" id="NH6-xG-WAS"/>
+                            <constraint firstItem="3f4-wS-Fp4" firstAttribute="trailing" secondItem="htb-gA-A3i" secondAttribute="trailing" constant="25" id="WvG-E5-Dbb"/>
                             <constraint firstItem="orq-cP-gie" firstAttribute="leading" secondItem="3f4-wS-Fp4" secondAttribute="leading" constant="25" id="c7k-cw-PwJ"/>
-                            <constraint firstItem="htb-gA-A3i" firstAttribute="centerX" secondItem="6jt-PB-cMy" secondAttribute="centerX" id="exE-eJ-bPb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3f4-wS-Fp4"/>
                     </view>
@@ -900,7 +931,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="09N-HH-Hev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="955" y="911"/>
+            <point key="canvasLocation" x="953.62318840579712" y="910.71428571428567"/>
         </scene>
         <!--Game Over Controller-->
         <scene sceneID="Af3-Lo-E8o">
@@ -931,7 +962,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GAME OVER" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6xp-xW-VMv">
                                 <rect key="frame" x="23" y="161.5" width="364" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="50"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" red="1" green="0.74509803921568629" blue="0.043137254901960784" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -1196,15 +1227,16 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="DwD-uG-inH"/>
-        <segue reference="nks-6t-a6K"/>
-        <segue reference="dFh-rj-dyG"/>
-        <segue reference="Jzq-oB-uNs"/>
+        <segue reference="S03-Iv-oHs"/>
+        <segue reference="lUI-Oo-YKi"/>
+        <segue reference="3Lo-Nd-a1n"/>
+        <segue reference="jW2-Up-hJy"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="BlueExitButton" width="109" height="45"/>
         <image name="BlueNextButton" width="267" height="59"/>
         <image name="BlueScale" width="253" height="4"/>
+        <image name="BrightOrangeBack" width="109" height="45"/>
         <image name="GoButton" width="85" height="84"/>
         <image name="HelpIcon" width="38" height="38"/>
         <image name="PurpleBackButton" width="109" height="45"/>
@@ -1214,7 +1246,11 @@
         <image name="bug!.png" width="960" height="720"/>
         <image name="buzzed bug.png" width="960" height="720"/>
         <image name="cap" width="100" height="100"/>
+        <image name="disclamirTab" width="95" height="224"/>
         <image name="dot" width="10" height="10"/>
+        <image name="gameRulesTab" width="95" height="224"/>
+        <image name="gameSetupTab" width="95" height="224"/>
+        <image name="memoTab" width="95" height="224"/>
         <image name="orange" width="171" height="172"/>
         <image name="pink" width="171" height="171"/>
         <image name="purple" width="171" height="172"/>

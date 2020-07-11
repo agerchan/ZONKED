@@ -61,4 +61,19 @@ class HelpController: UIViewController {
         }
     }
     
+    @IBAction func gameSetup(_ sender: Any) {
+        rules.text = "Game Setup Stuff"
+    }
+    
+    @IBAction func gameRules(_ sender: Any) {
+        rules.text = "Game Rules Stuff"
+    }
+    @IBAction func disclamir(_ sender: Any) {
+        rules.text = "Disclamir Stuff"
+    }
+    
+    @IBAction func memo(_ sender: Any) {
+        rules.text = "Memo Stuff"
+}
+
 }
