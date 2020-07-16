@@ -37,21 +37,21 @@ class HelpController: UIViewController {
     
     
     func gameSetup () {
-        rules.text = "filth meter indicates how dirty you want the questions to be. spray bottle is completely clean, the middle is normal, and the trash can is very dirty \n" + "select as many expansion packs and features as you'd like.\n" + "you can hold the buttons to view their labels\n" + "the graduation cap is the college themed expansion pack\n" + "the earth is the distance feature, removing any questions that must be played in real life\n" + "the skull is the brutal expansion pack, with questions that are sometimes just straight up mean\n" + "the virus is the coronavirus themed expansion pack\n\n"
+        rules.text = "On the extension page, you get to customize what cards you'll get while playing the game. \n\n" + "The filth meter indicates how dirty you want the questions to be. Spray bottle is completely clean, the middle is normal, and the trash can is very dirty. \n\n" + "Select as many expansion packs and features as you'd like. To see their names, hold down the buttons. They will turn green when their extension pack is selected. \n\n" + "The graduation cap is the college themed expansion pack.\n\n" + "The earth is the distance feature, removing any questions that must be played in real life.\n\n" + "The skull is the brutal expansion pack, with questions that are sometimes just straight up mean.\n\n" + "The virus is the coronavirus themed expansion pack.\n\n" + "Once you are satisfied with your selections, press go to begin the game."
         gamesetuptriangle.isHidden = false
         gamerulestriangle.isHidden = true
         disclaimertriangle.isHidden = true
         memotriangle.isHidden = true
     }
     func gameRules () {
-        rules.text = "CENSUS: drink if it applies to you\n" + "WHO: the group votes on who a statement applies to most. that person drinks\n" + "MISC: cards are self explanatory\n" + "TOD: truth or dare or drink. either do what the card says, or take a drink\n" + "paranoia: minigame initated by one of the misc cards. one by one, press next card, but don't let the rest of the group see the phone. answer with the name of a person in the group, other than yourself. flip the coin. if it's heads, say the question. if it's tails, keep it secret"
+        rules.text = "Pass the phone around in a circle, with each person pulling one card. There are 4 categories of cards, each of which has it's own rules.\n\n\n" + "CENSUS: If the card applies to you, whether or not you were the one who pulled the card or not, drink. \n\n" + "WHO: The group votes on who the statement applies to most. That person drinks. \n\n" + "TOD: Stands for truth or dare or drink. Person who pulled the card either does what the card says or drinks. \n\n" + "MISC: Cards should be self explanatory. Unless otherwise stated, this card will apply to the person who pulled it \n\n" + "PARANOIA (minigame): Initiated by one of the MISC cards. One by one, press next card, but don't let the rest of the group see the phone. Answer the question with the name of a person in the group, other than yourself. Flip the coin. If it's heads, reveal the question. If it's tails, keep it secret."
         gamesetuptriangle.isHidden = true
         gamerulestriangle.isHidden = false
         disclaimertriangle.isHidden = true
         memotriangle.isHidden = true
     }
     func disclamir () {
-        rules.text = "disclaimer! if you are not of age, play for points instead of for drinks! person with the most points at the end loses!\n"
+        rules.text = "Disclaimer! \n\nDo not drink if you are not of legal drinking age. \n\n\nYou can still play Buzzed Bug as a social icebreaker game. To do so, replace drinks with points. The person with the most points at the end loses!\n"
         gamesetuptriangle.isHidden = true
         gamerulestriangle.isHidden = true
         disclaimertriangle.isHidden = false
@@ -126,7 +126,7 @@ class HelpController: UIViewController {
         rules.text = "Hi Gaby!\nThis is an extra special thank you from me. " +
         "Thank you for oranizing this project and giving me something to do this summer! " +
         "I had so much fun doing this and there's nobody I'd rather work on a project with! " +
-        "Thank you for being here all summer cutie ;)"
+        "Thank you for always being here for me cutie ;)"
     }
     
 }

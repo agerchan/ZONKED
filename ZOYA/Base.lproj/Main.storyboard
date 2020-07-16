@@ -884,9 +884,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi babez" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
-                                <rect key="frame" x="150" y="69" width="224" height="47"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi babez" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" minimumFontSize="6" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
+                                <rect key="frame" x="150" y="69" width="224" height="35.333333333333343"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1384,7 +1384,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Lnn-8G-Ro7"/>
-        <segue reference="nks-6t-a6K"/>
+        <segue reference="lUI-Oo-YKi"/>
         <segue reference="3Lo-Nd-a1n"/>
         <segue reference="jW2-Up-hJy"/>
     </inferredMetricsTieBreakers>
