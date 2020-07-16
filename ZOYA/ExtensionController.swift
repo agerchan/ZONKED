@@ -35,6 +35,12 @@ class ExtensionController: UIViewController {
     @IBOutlet weak var coronabutton: UIButton!
     @IBOutlet weak var distancebutton: UIButton!
     
+    @IBOutlet weak var collegetext: UILabel!
+    @IBOutlet weak var distancetext: UILabel!
+    @IBOutlet weak var brutaltext: UILabel!
+    @IBOutlet weak var coronatext: UILabel!
+    
+    
     func secretdeck() {
         if truthtable[3] {
             truthtable[3] = false
@@ -90,7 +96,11 @@ class ExtensionController: UIViewController {
     }
     
     //recording which options are selected and what values in the truthbable are what
+    @IBAction func collegetouched(_ sender: Any) {
+        collegetext.isHidden = false
+    }
     @IBAction func collegeclicked(_ sender: Any) {
+        collegetext.isHidden = true
         if truthtable[0] {
             truthtable[0] = false
             collegebutton.isSelected = false
@@ -102,8 +112,12 @@ class ExtensionController: UIViewController {
             collegebutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
         }
     }
-    
+
+    @IBAction func brutaltouched(_ sender: Any) {
+        brutaltext.isHidden = false
+    }
     @IBAction func brutalclicked(_ sender: Any) {
+        brutaltext.isHidden = true
         if truthtable[1] {
             truthtable[1] = false
             brutalbutton.isSelected = false
@@ -115,7 +129,11 @@ class ExtensionController: UIViewController {
             brutalbutton.setImage(UIImage(named: "green" )! as UIImage, for: .normal)
         }
     }
+    @IBAction func coronatouched(_ sender: Any) {
+        coronatext.isHidden = false
+    }
     @IBAction func coronaclicked(_ sender: Any) {
+        coronatext.isHidden = true
         if truthtable[2] {
             truthtable[2] = false
             coronabutton.isSelected = false
@@ -128,7 +146,11 @@ class ExtensionController: UIViewController {
 
         }
     }
+    @IBAction func distancetouched(_ sender: Any) {
+        distancetext.isHidden = false
+    }
     @IBAction func distanceclicked(_ sender: Any) {
+        distancetext.isHidden = true
         if irl {
             irl = false
             distancebutton.isSelected = true
@@ -150,6 +172,7 @@ class ExtensionController: UIViewController {
         }
     }
     @IBAction func college2(_ sender: Any) {
+        collegetext.isHidden = true
         secretdeck()
     }
     

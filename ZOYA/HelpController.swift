@@ -37,31 +37,32 @@ class HelpController: UIViewController {
     
     
     func gameSetup () {
-        rules.text = "Game Setup Stuff"
+        rules.text = "filth meter indicates how dirty you want the questions to be. spray bottle is completely clean, the middle is normal, and the trash can is very dirty \n" + "select as many expansion packs and features as you'd like.\n" + "you can hold the buttons to view their labels\n" + "the graduation cap is the college themed expansion pack\n" + "the earth is the distance feature, removing any questions that must be played in real life\n" + "the skull is the brutal expansion pack, with questions that are sometimes just straight up mean\n" + "the virus is the coronavirus themed expansion pack\n\n"
         gamesetuptriangle.isHidden = false
         gamerulestriangle.isHidden = true
         disclaimertriangle.isHidden = true
         memotriangle.isHidden = true
-        //triangleY = NSLayoutConstraint(item: triangle!, attribute: .centerY, relatedBy: .equal, toItem: gamesetupbutton, attribute: .centerY, multiplier: 1, constant: 0)
-        //gamesetupbutton.centerYAnchor.constraint(equalTo: triangle.centerYAnchor, constant: 0).isActive = true
-        //triangle.centerYAnchor.constraint(equalTo: gamesetupbutton.centerYAnchor, constant: 0).isActive = true
     }
     func gameRules () {
-        rules.text = "Game Rules Stuff"
+        rules.text = "CENSUS: drink if it applies to you\n" + "WHO: the group votes on who a statement applies to most. that person drinks\n" + "MISC: cards are self explanatory\n" + "TOD: truth or dare or drink. either do what the card says, or take a drink\n" + "paranoia: minigame initated by one of the misc cards. one by one, press next card, but don't let the rest of the group see the phone. answer with the name of a person in the group, other than yourself. flip the coin. if it's heads, say the question. if it's tails, keep it secret"
         gamesetuptriangle.isHidden = true
         gamerulestriangle.isHidden = false
         disclaimertriangle.isHidden = true
         memotriangle.isHidden = true
     }
     func disclamir () {
-        rules.text = "Disclaimer Stuff"
+        rules.text = "disclaimer! if you are not of age, play for points instead of for drinks! person with the most points at the end loses!\n"
         gamesetuptriangle.isHidden = true
         gamerulestriangle.isHidden = true
         disclaimertriangle.isHidden = false
         memotriangle.isHidden = true
     }
     func memo () {
-        rules.text = "Memo Stuff"
+        rules.text = "Gabriella Ardiles and Anna Gerchanovsky would like to thank our friends for helping us create this game. " +
+            "Thank you Myles Winston, Brooke Gunter, Izzy Gloria, Neil Brydon for giving your input and opinions! " +
+        "Special thanks to Izzy Gloria, for inpsiring the game, transcribing the cards, and promising to get the bug tattooed on her <3. " +
+        "Sorry Cal McCullough and Alice Zilberberg that you cannot get this game on your phone :( " +
+        "Sending love to everybody mentioned as well as Luke Arney, Jason Ledon, Rowan Dunlop, Max Robbins, Benjamin Stern, Garret Irwin, Palak Jain, and our wonderful housemate Gavin :)."
         gamesetuptriangle.isHidden = true
         gamerulestriangle.isHidden = true
         disclaimertriangle.isHidden = true
@@ -70,8 +71,6 @@ class HelpController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
         if previouspage == "start" || previouspage == "game" {
             gameRules()
         }
@@ -79,9 +78,6 @@ class HelpController: UIViewController {
             gameSetup()
         }
         else {gameRules()}
-        
-//        rules.text = "abridged rules \n\n\n" + "extension screen: \n\n" + "filth meter indicates how dirty you want the questions to be. spray bottle is completely clean, the middle is normal, and the trash can is very dirty \n" + "select as many expansion packs and features as you'd like.\n" + "you can hold the buttons to view their labels\n" + "the graduation cap is the college themed expansion pack\n" + "the earth is the distance feature, removing any questions that must be played in real life\n" + "the skull is the brutal expansion pack, with questions that are sometimes just straight up mean\n" + "the virus is the coronavirus themed expansion pack\n\n" + "gameplay: \n\n" + "disclaimer! if you are not of age, play for points instead of for drinks! person with the most points at the end loses!\n" + "CENSUS: drink if it applies to you\n" + "WHO: the group votes on who a statement applies to most. that person drinks\n" + "MISC: cards are self explanatory\n" + "TOD: truth or dare or drink. either do what the card says, or take a drink\n" + "paranoia: minigame initated by one of the misc cards. one by one, press next card, but don't let the rest of the group see the phone. answer with the name of a person in the group, other than yourself. flip the coin. if it's heads, say the question. if it's tails, keep it secret"
-        // Do any additional setup after loading the view.
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -123,9 +119,14 @@ class HelpController: UIViewController {
     @IBAction func disclamirPressed(_ sender: Any) {
         disclamir()
     }
-    
     @IBAction func memoPressed(_ sender: Any) {
         memo()
-}
-
+    }
+    @IBAction func secretPressed(_ sender: Any) {
+        rules.text = "Hi Gaby!\nThis is an extra special thank you from me. " +
+        "Thank you for oranizing this project and giving me something to do this summer! " +
+        "I had so much fun doing this and there's nobody I'd rather work on a project with! " +
+        "Thank you for being here all summer cutie ;)"
+    }
+    
 }
