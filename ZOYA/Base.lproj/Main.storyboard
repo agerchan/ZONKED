@@ -1025,6 +1025,10 @@
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="kTN-co-18M">
                                 <rect key="frame" x="63" y="95.5" width="98" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="3E5-Pd-xnK"/>
+                                    <constraint firstAttribute="height" constant="30" id="bGX-Kf-HsQ"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-SM-c84">
                                 <rect key="frame" x="287" y="95.5" width="98" height="30"/>
@@ -1180,11 +1184,11 @@
                                 <include reference="puM-AE-KDw"/>
                                 <include reference="Igr-iD-JvE"/>
                                 <include reference="a79-oG-nAz"/>
+                                <include reference="TXq-t8-Ry7"/>
                                 <include reference="m4b-uB-KIE"/>
                                 <include reference="wfl-aK-sId"/>
                                 <include reference="3F3-wP-LIv"/>
                                 <include reference="5FN-ZU-IHQ"/>
-                                <include reference="TXq-t8-Ry7"/>
                                 <include reference="8sY-yB-xQn"/>
                                 <include reference="f8L-uk-PBC"/>
                                 <include reference="mNt-Ay-1FC"/>
