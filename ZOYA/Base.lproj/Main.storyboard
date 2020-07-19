@@ -885,7 +885,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi babez" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="36" baselineAdjustment="alignBaselines" minimumFontSize="3" translatesAutoresizingMaskIntoConstraints="NO" id="orq-cP-gie">
-                                <rect key="frame" x="194" y="196.5" width="618" height="35.5"/>
+                                <rect key="frame" x="194" y="150.5" width="618" height="35.5"/>
                                 <fontDescription key="fontDescription" name="Futura-Bold" family="Futura" pointSize="27"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1024,11 +1024,7 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="kTN-co-18M">
-                                <rect key="frame" x="73.5" y="95.5" width="77" height="76"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="77" id="1by-uJ-6JJ"/>
-                                    <constraint firstAttribute="height" constant="76" id="fUE-Wx-9jZ"/>
-                                </constraints>
+                                <rect key="frame" x="63" y="95.5" width="98" height="30"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HTriangle" translatesAutoresizingMaskIntoConstraints="NO" id="Lme-SM-c84">
                                 <rect key="frame" x="287" y="95.5" width="98" height="30"/>
